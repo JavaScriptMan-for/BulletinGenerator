@@ -10,7 +10,6 @@ import {
     ImageRun,
     UnderlineType,
     TabStopType,
-    IImageOptions
 } from "docx";
 import fs from "fs"
 
