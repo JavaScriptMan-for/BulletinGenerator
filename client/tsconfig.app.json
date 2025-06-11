@@ -1,0 +1,34 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": false,
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@types-my/*": ["./types/*"],
+      "@slices-my/*": ["./store/*"],
+      "@methods/*": ["./src/methods/*"],
+      "@pages/*": ["./src/pages/*"]
+    },
+    "moduleResolution": "node", // Или "bundler" или "nodenext" - проверь
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "lib": ["es2015", "dom"],
+    "isolatedModules": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src", "types", "store"],  // Включаем "src", "types", и "store"
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

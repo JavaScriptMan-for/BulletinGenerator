@@ -1,0 +1,32 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js --verbose",
+    "client": "npm run dev --prefix ../client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "tsc",
+    "prod": "npm run build && node dist/server.js",
+    "dev": "nodemon server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "docx": "^9.5.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "html-to-docx": "^1.8.0",
+    "mongoose": "^8.15.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.0",
+    "@types/html-to-docx": "^1.8.0",
+    "@types/mongoose": "^5.11.97",
+    "nodemon": "^3.1.9"
+  }
+}
