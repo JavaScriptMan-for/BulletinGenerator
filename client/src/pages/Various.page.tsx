@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import "../sass/preview_page.scss"
 
-const PreviewPage:FC = () => {
+const VariousPage:FC = () => {
   return (
     <>
        
@@ -9,4 +9,4 @@ const PreviewPage:FC = () => {
   )
 }
 
-export default PreviewPage;
+export default VariousPage;

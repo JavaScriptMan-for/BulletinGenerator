@@ -7,7 +7,7 @@ const initialState: MainStateTypes = {
 };
 
 const clientSlice = createSlice({
-    name: 'upload',
+    name: 'main',
     initialState,
     reducers: {
     

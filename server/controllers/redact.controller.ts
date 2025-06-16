@@ -33,13 +33,12 @@ interface VariousInfoType {
     name_representative: string,
     share_size: string,
     share_size_with_common_denominator: string,
-    number_day: number
+    number_day: number |'____'
 }
 
 interface BodyType {
     general_info: GeneralInfoType,
     various_info: VariousInfoType[],
-    count: number
 }
 
 const imagePath = "./static/Vote.png";
@@ -47,15 +46,19 @@ const imagePath = "./static/Vote.png";
 class RedactController {
     public async postData(req: Request<{}, {}, BodyType>, res: Response): Promise<any> {
         try {
-            const { general_info, various_info, count } = req.body;
+            const { general_info, various_info } = req.body;
+
+
+            const count: number = various_info.length
 
             //Валидация
 
             if (count > 300) return res.status(429).json({ message: "Превышен лимит бюллетеней" })
 
             if (general_info.date.length > 23) return res.status(400).json({ message: "Ошибка при указании даты" })
-            if (general_info.cadastral_number.length < 14 || general_info.cadastral_number.length > 18) return res.status(400).json({ message: "Ошибка при вводе кадастрового номера" })
-            if (general_info.area.length < 7) return res.status(400).json({ message: "Неверно указана площадь" })
+            if (general_info.cadastral_number.length < 15 || general_info.cadastral_number.length > 19) return res.status(400).json({ message: "Ошибка при вводе кадастрового номера" })
+            if (general_info.area.length < 11) return res.status(400).json({ message: "Неверно указана площадь" })
+            if(general_info.address.length > 146) return res.status(400).json({message: "Слишком длинный адрес"})
 
 
             for (let i: number = 0; i < various_info.length; i++) {
@@ -73,8 +76,9 @@ class RedactController {
 
             function createPage(general_info: GeneralInfoType, various_info: VariousInfoType[], count: number) {
 
-                let share_text = `(размер доли в праве)`
-                let name_representative_text = `(представитель ${various_info[count].name_representative})`
+                let share_text: string = `(размер доли в праве)`
+                let name_representative_text: string = `(представитель ${various_info[count].name_representative})`
+                let size_address: number = 52
 
 
                 if (various_info[count].fraction === 'га') {
@@ -85,6 +89,11 @@ class RedactController {
 
                 if (!various_info[count].isRepresentative) {
                     name_representative_text = ""
+                }
+                if(general_info.address.length > 97) {
+                    size_address = 46
+                } else {
+                    size_address = 52
                 }
 
                 pages.push(
@@ -343,7 +352,7 @@ class RedactController {
                                     new TextRun({
                                         text: `на общем собрании участников долевой собственности на земельный участок с кадастровым номером ${general_info.cadastral_number} общей площадью ${general_info.area}, расположенный по адресу: ${general_info.address} `,
                                         font: "Times New Roman",
-                                        size: 52
+                                        size: size_address
                                     })
                                 ]
                             }),
@@ -428,7 +437,7 @@ class RedactController {
 
             const buffer = await Packer.toBuffer(doc);
 
-            res.setHeader('Content-Disposition', 'attachment; filename="ballot.docx"');
+            res.setHeader('Content-Disposition', `attachment; filename="bullet.docx`);
             res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
             res.send(buffer);
         } catch (error) {

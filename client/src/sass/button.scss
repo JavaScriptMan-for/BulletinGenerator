@@ -1,0 +1,41 @@
+@keyframes GradientReplace {
+  from {
+    background: linear-gradient(159deg, rgba(46, 139, 87, 1) 0%, rgba(64, 224, 208, 1) 100%);
+    box-shadow: 6px 6px 3px rgba(46, 139, 87, 1);
+  }
+  to {
+    background: linear-gradient(159deg, rgba(0, 84, 180, 1) 0%, rgba(64, 224, 208, 1) 100%);
+    box-shadow: 6px 6px 3px rgba(0, 84, 180, 1);
+  }
+}
+
+button {
+  background: linear-gradient(159deg, rgba(46, 139, 87, 1) 0%, rgba(64, 224, 208, 1) 100%);
+  width: 300px;
+  height: 100px;
+  margin-left: 40px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+
+  font-size: 30px;
+  font-family: Verdana, sans-serif;
+  color: white;
+
+  box-shadow: 6px 6px 3px rgba(46, 139, 87, 1);
+
+  &:hover {
+    animation: GradientReplace 200ms linear forwards;
+  }
+}
+
+button.next:disabled {
+  background: linear-gradient(147deg, #c7c4bf 0%, #5D6166 74%);
+  cursor: not-allowed;
+  box-shadow: none; /* Убираем тень */
+
+  &:hover { /* Явно переопределяем стили при наведении на заблокированную кнопку */
+    background: linear-gradient(147deg, #c7c4bf 0%, #5D6166 74%); /* Возвращаем цвет заблокированной кнопки */
+    animation: none; /* Отключаем анимацию */
+    box-shadow: none;  /* Убираем тень */
+  }
+}    

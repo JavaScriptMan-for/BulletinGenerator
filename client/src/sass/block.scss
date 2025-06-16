@@ -1,0 +1,22 @@
+
+
+div#block {
+    background-color: rgb(221, 247, 213);
+    margin-left: 10px;
+    display: flex;
+    height: fit-content;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 1px rgba($color: #ffffff, $alpha: 0.7);
+    margin-bottom: 30px;
+}
+
+span {
+    text-align: justify;
+    font-weight: bold;
+    color: black;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+}
+

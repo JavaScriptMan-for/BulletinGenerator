@@ -11,7 +11,8 @@
     "@pages/*": ["./src/pages/*"],
     "@types-my/*": ["./types/*"],
     "@slices-my/*": ["./store/*"],
-    "@methods/*": ["./src/methods/*"]
+    "@methods/*": ["./src/methods/*"],
+    "@enums/*": ["./enums/*"]
   }
   },
 

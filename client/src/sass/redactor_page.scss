@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: url("/fonts/Montserrat-Italic.ttf");
+}
+h1 {
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: "Montserrat-Italic", sans-serif;
+}
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+form {
+    animation: Opacity 1.3s linear forwards;
+    h2 {
+        font-size: 30px;
+        font-family: Verdana, sans-serif;
+    }
+
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    label {
+        font-size: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    input  {
+        font-size: 20px;
+        width: 300px;
+        height: 50px;
+        outline: none;
+        border-radius: 20px;
+        padding: 10px;
+        &::placeholder {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+   select {
+        font-size: 20px;
+        width: 300px;
+        height: 70px;
+        outline: none;
+        border-radius: 20px;
+        padding: 10px;
+   }
+
+   .validate_error {
+    color: red;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+
+    .part_row_inputs {
+        align-items: center;
+        display: flex;
+        gap: 20px
+    }
+    .validate_errors {
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+/*Дата*/
+        #date {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #day_input {
+        text-align: center;
+        width: 100px;
+    }
+
+    #year_input {
+        text-align: center;
+        width: 100px;
+    }
+    /*Кадастровый номер*/
+#cadastral_number {
+    input {
+        text-align: center;
+    }
+     #c_1, #c_2 {
+        width: 50px;
+        text-align: center;
+    }
+    #c_3 {
+        width: 150px;
+    }
+}
+/*Адрес*/
+textarea {
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    resize: vertical;
+
+    min-height: 70px;
+    max-height: 120px;
+
+    width: 500px;
+    height: 70px;
+
+    &::placeholder {
+        font-size: 20px;
+    }
+}
+#number_quest {
+    margin-bottom: 20px;
+    width: 60px;
+}
+}
+

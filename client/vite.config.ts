@@ -12,7 +12,8 @@ export default defineConfig({
       '@slices-my': path.resolve(__dirname, './store'), // Изменил путь
       '@methods': path.resolve(__dirname, './src/methods'), // Изменил путь
       '@components': path.resolve(__dirname, './src/components'), // Изменил путь
-      '@pages': path.resolve(__dirname, './src/pages')
+      '@pages': path.resolve(__dirname, './src/pages'),
+      '@enums': path.resolve(__dirname, './enums'),
     },
   },
   server: {

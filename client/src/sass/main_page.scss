@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Montserrat-Italic";
+    src: url("/fonts/Montserrat-Italic.ttf");
+}
+@font-face {
+    font-family: "Calama";
+    src: url("/fonts/Calama.ttf");
+}
+
+$main_green: rgba(14, 206, 14, 0.7);
+$button_color: rgb(60, 250, 2);
+
+
+
+@keyframes MoveText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+main {
+    margin-top: 200px;
+    animation: MoveText 1.3s linear forwards; 
+
+    h1 {
+        margin-bottom: 30px;
+        letter-spacing: 10px;
+        width: fit-content;
+        font-size: 180px;
+        color: $main_green;
+        text-transform: uppercase;
+        font-family: "Calama", sans-serif;
+        font-weight: bold;
+        text-shadow: 5px 3px 3px rgba(3, 3, 0, 0.2);
+        padding: 10px 20px;
+        backdrop-filter: blur(5px);
+    }
+}
+
+

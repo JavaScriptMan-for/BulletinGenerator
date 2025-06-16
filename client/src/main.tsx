@@ -1,15 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import "./sass/main.scss"
 
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 
-import store from "../store/store.ts"
+import store from "@slices-my/store"
 import { Provider } from 'react-redux'
 
 import { BrowserRouter } from 'react-router-dom'
 
 
-import App from './App.tsx'
+import App from './App'
 
 const Query_Client = new QueryClient();
 

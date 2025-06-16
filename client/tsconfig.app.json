@@ -12,7 +12,8 @@
       "@types-my/*": ["./types/*"],
       "@slices-my/*": ["./store/*"],
       "@methods/*": ["./src/methods/*"],
-      "@pages/*": ["./src/pages/*"]
+      "@pages/*": ["./src/pages/*"],
+      "@enums/*": ["./enums/*"]
     },
     "moduleResolution": "node", // Или "bundler" или "nodenext" - проверь
     "allowJs": true,
@@ -29,6 +30,6 @@
     "isolatedModules": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "types", "store"],  // Включаем "src", "types", и "store"
+  "include": ["src", "types", "store", "enums"],  // Включаем "src", "types", и "store"
   "exclude": ["node_modules", "**/node_modules/*"]
 }
