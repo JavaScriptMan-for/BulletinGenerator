@@ -11,7 +11,7 @@ const NumberQuest:FC = () => {
   return (
     <div id='number_quest'>
        <div className="part_row_inputs">
-        <label htmlFor="number_quest">Количество вопросов дня</label>
+        <label htmlFor="number_quest">Число вопросов повестки дня</label>
       <input
       id='number_quest'
       placeholder='1'
@@ -20,11 +20,11 @@ const NumberQuest:FC = () => {
         required: "Это поле обязательное",
         min: {
           value: 1,
-          message: "Минимальное количество вопросов для - 1"
+          message: "Минимальное число вопросов для - 1"
         },
         max: {
           value: 15,
-          message: "Максимальное количество вопросов дня - 15"
+          message: "Максимальное число вопросов дня - 15"
         }
        })}
        />

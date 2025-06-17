@@ -2,6 +2,9 @@
     font-family: "Montserrat-Italic";
     src: url("/fonts/Montserrat-Italic.ttf");
 }
+body {
+    overflow-x: hidden;
+}
 h1 {
     margin-left: 20px;
     font-size: 40px;
@@ -125,5 +128,9 @@ textarea {
     margin-bottom: 20px;
     width: 60px;
 }
+}
+#unit {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
 }
 

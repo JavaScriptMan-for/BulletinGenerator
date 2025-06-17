@@ -4,7 +4,6 @@ import "../../sass/button.scss"
 
 import { useFormContext } from 'react-hook-form';
 import { AreaPartType } from "@types-my/Form.type"
-import OptionsEd from '@components/OptionsEd';
 
 
 const Area:FC = () => {
@@ -13,7 +12,7 @@ const { register, watch, setValue, formState: { errors } } = useFormContext<Area
     const area_value = watch('area');
     
     useEffect(()=> {
-        if(area_value && String(area_value).length > 5) {
+        if(area_value && String(area_value).length > 9) {
              const count = Number(area_value.toString().slice(0, -1))
             setValue('area', count)
         }
@@ -35,10 +34,7 @@ const { register, watch, setValue, formState: { errors } } = useFormContext<Area
             }
         })}
         />
-        <label htmlFor="ed">Ед. измерения</label>
-        <select {...register('unit_of_measurement')} id="ed">
-        <OptionsEd />
-        </select>
+        <p id='unit'>кв. м</p>
        </div>
        <div className="validate_errors">
         <p className="validate_error">{errors.area && errors.area.message}</p>

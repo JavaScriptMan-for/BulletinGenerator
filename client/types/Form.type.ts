@@ -21,6 +21,16 @@ export interface GeneralInfoToServer {
     number_questions: number
 }
 
+export interface VariousInfo {
+    fraction: 'в доле' | 'га',
+    isRepresentative: boolean,
+    name: string,
+    name_representative: string,
+    share_size: string,
+    share_size_with_common_denominator: string,
+    number_day: number |'____'
+}
+
 //Части формы
 
 export interface DatePartType {

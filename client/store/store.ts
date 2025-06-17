@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { useDispatch } from 'react-redux'
 import generalInfoSlice from "@slices-my/general_info.slice"
+import variousInfoSlice from "@slices-my/various_info.slice"
 
 
 const store = configureStore({
   reducer: {
-    general_info: generalInfoSlice
+    general_info: generalInfoSlice,
+    various_info: variousInfoSlice
   },
 })
 

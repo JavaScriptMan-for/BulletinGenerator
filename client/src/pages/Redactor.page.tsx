@@ -28,7 +28,7 @@ const RedactorPage: FC = () => {
         console.log(data);
         const date_izn: string = `${data.day} ${data.mouth} ${data.year} года`
         const cadastral_number_izn: string = `${data.cadastral_number_1}:${data.cadastral_number_2}:${data.cadastral_number_3}:${data.cadastral_number_y}`
-        const area_izn: string = `${data.area} ${data.unit_of_measurement}`
+        const area_izn: string = `${data.area} кв. м`
 
         const generalInfo: GeneralInfoToServer = {
           date: date_izn,
@@ -47,7 +47,7 @@ const RedactorPage: FC = () => {
             <h1>Конструктор</h1>
             <FormProvider {...methods}> 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <h2>Введите общую для всех информацию</h2>
+                    <h2>Информация об общем собрании</h2>
                     <DateComponent />
                     <CadastralNumber />
                     <Area />

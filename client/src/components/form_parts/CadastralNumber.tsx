@@ -74,7 +74,7 @@ useEffect(()=> {
             {...register('cadastral_number_3', {
                 required: "Это поле обязательное",
                   min: {
-                    value: 1000000,
+                    value: 0,
                     message: "Некорректное значение третьего поля"
                 }
             })}
@@ -83,7 +83,7 @@ useEffect(()=> {
 
 
             <input
-            placeholder='X*Y'
+            placeholder='X'
             id='c_y'
             type="number"
             {...register('cadastral_number_y', {
