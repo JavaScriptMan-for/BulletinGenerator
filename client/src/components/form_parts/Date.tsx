@@ -11,6 +11,8 @@ const Date:FC = () => {
 
   const { register, watch, setValue, formState: { errors } } = useFormContext<DatePartType>();
 
+  const ls_1 = localStorage.getItem('day') || ''
+  const ls_2 = localStorage.getItem('year') || ''
   
   const day_value = watch('day');
   const year_value = watch('year');
@@ -39,6 +41,7 @@ const Date:FC = () => {
         placeholder='1'
         id='day_input'
         type="number"
+        defaultValue={ls_1}
         {...register('day', {
          required: "Это поле обязательное",
           max: {
@@ -59,6 +62,7 @@ const Date:FC = () => {
        </select>
        <label htmlFor="year_input">Год</label>  
        <input
+       defaultValue={ls_2}
        placeholder='2020'
        id='year_input'
        type="number" 

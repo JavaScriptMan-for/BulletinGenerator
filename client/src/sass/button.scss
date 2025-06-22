@@ -28,7 +28,7 @@ button {
   }
 }
 
-button.next:disabled {
+button:disabled {
   background: linear-gradient(147deg, #c7c4bf 0%, #5D6166 74%);
   cursor: not-allowed;
   box-shadow: none; /* Убираем тень */

@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url("/fonts/Montserrat-Italic.ttf");
+}
+form.various {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 3px dashed black;
+}
 form {
     width: 100%;
     display: flex;
@@ -66,4 +75,39 @@ input[type=radio] {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.share_size {
+    width: 100px;
+}
+.number_form {
+  margin-left: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.number_form #delete_icon {
+    flex-shrink: 0; 
+    cursor: pointer;
+    margin-right: 20px;
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Montserrat-Italic", sans-serif;
+}
+.send_various {
+    margin-left: 100px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.center {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+li::after {
+    content: '#';
 }

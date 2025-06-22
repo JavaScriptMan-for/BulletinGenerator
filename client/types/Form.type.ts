@@ -1,4 +1,4 @@
-type Mouths = "январь" | "февраль" | "март" | "апрель" | "май" | "июнь" | "июль" | "август" | "сентябрь" | "октябрь" | "ноябрь" | "декабрь";
+export type Mouths = "январь" | "февраль" | "март" | "апрель" | "май" | "июнь" | "июль" | "август" | "сентябрь" | "октябрь" | "ноябрь" | "декабрь";
 
 export interface GeneralInfo {
     day: number,
@@ -9,7 +9,6 @@ export interface GeneralInfo {
     cadastral_number_3: number,
     cadastral_number_y: number
     area: number,
-    unit_of_measurement: string
     address: string,
     number_questions: number
 }
@@ -21,7 +20,7 @@ export interface GeneralInfoToServer {
     number_questions: number
 }
 
-export interface VariousInfo {
+export interface VariousInfoToServer {
     fraction: 'в доле' | 'га',
     isRepresentative: boolean,
     name: string,
@@ -29,6 +28,16 @@ export interface VariousInfo {
     share_size: string,
     share_size_with_common_denominator: string,
     number_day: number |'____'
+}
+export interface VariousInfo {
+    fraction: 'в доле' | 'га',
+    isRepresentative: boolean,
+    name: string,
+    name_representative: string,
+    share_size_ch: number,
+    share_size_z: number,
+    share_size_with_common_ch: number,
+    share_size_with_common_z: number,
 }
 
 //Части формы
@@ -55,5 +64,18 @@ export interface AddressPartType {
     address: 'string'
 }
 export interface NumberQuestionPartType {
-    number_quest: number
+    number_questions: number
+}
+
+export interface FractionAndFIO {
+    name: string,
+    name_representative: string,
+    fraction: 'в доле' | 'га',
+    isRepresentative: boolean
+}
+export interface Share {
+    share_size_ch: number,
+    share_size_z: number,
+    share_size_with_common_ch: number,
+    share_size_with_common_z: number
 }

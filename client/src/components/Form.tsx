@@ -2,18 +2,32 @@ import { FC, useEffect, useCallback } from 'react';
 import "../sass/various_page.scss"
 
 import { useAppDispatch } from '@slices-my/store';
-import { addVariousInfo } from '@slices-my/various_info.slice';
+import { addVariousInfo, addIsValid } from '@slices-my/various_info.slice';
 
 import { useSelector } from 'react-redux';
 import { RootState } from '@slices-my/store';
 
+import { useNavigate } from 'react-router-dom';
+
 import { useForm, FormProvider } from 'react-hook-form';
 import { VariousInfo } from '@types-my/Form.type';
+import { Links } from '@enums/Links.enum';
 
 import FIO from '@components/form_parts/FIO';
-import Fraction from '@components/form_parts/Fraction';
+import deleteIcon from '/img/delete.png'
 
-const Form: FC = () => {
+
+interface Props {
+    id: number,
+    onDelete: (id: number) => void,
+    num: number
+}
+
+const Form: FC<Props> = ({ id, onDelete, num }) => {
+
+    const navigate = useNavigate()
+
+    const general_info = useSelector((state: RootState) => state.general_info.general_info)
     const dispatch = useAppDispatch();
     const isClick = useSelector((state: RootState) => state.various_info.isClick);
 
@@ -21,23 +35,33 @@ const Form: FC = () => {
     const { handleSubmit, formState: { isValid } } = methods;
 
     const onSubmit = useCallback((data: VariousInfo) => {
-        console.log(data);
         dispatch(addVariousInfo(Array(data)));
-    }, [dispatch]); 
+        navigate(Links.RESULT)
+    }, [dispatch]);
+
+
 
     useEffect(() => {
         if (isClick > 0) {
-            alert(1)
-            handleSubmit((data: VariousInfo) => onSubmit(data))(); 
+            dispatch(addIsValid(isValid))
+            handleSubmit((data: VariousInfo) => onSubmit(data))();
         }
-    }, [isClick, handleSubmit, onSubmit]); 
+    }, [isClick, handleSubmit, onSubmit]);
+
+
+
+
+
+
     return (
         <>
+            <span className='number_form'>
+                #{num}
+                <img onClick={() => onDelete(id)} id='delete_icon' width={36} src={deleteIcon} alt="Удалить участника" />
+            </span>
             <FormProvider {...methods}>
-                <form > 
-                    <h2>Информация о каждом участнике</h2>
+                <form className='various'>
                     <FIO />
-                    <Fraction />
                 </form>
             </FormProvider>
         </>

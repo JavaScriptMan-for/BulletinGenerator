@@ -1,23 +1,38 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 
-const OptionsMouthComponent:FC = () => {
+const OptionsMouthComponent: FC = () => {
+  const defaultValue = localStorage.getItem('mouth') || ''
+
+
+  const options = [
+    { value: "января", label: "Январь" },
+    { value: "февраля", label: "Февраль" },
+    { value: "марта", label: "Март" },
+    { value: "апреля", label: "Апрель" },
+    { value: "мая", label: "Май" },
+    { value: "июня", label: "Июнь" },
+    { value: "июля", label: "Июль" },
+    { value: "августа", label: "Август" },
+    { value: "сентября", label: "Сентябрь" },
+    { value: "октября", label: "Октябрь" },
+    { value: "ноября", label: "Ноябрь" },
+    { value: "декабря", label: "Декабрь" },
+  ];
+
   return (
     <>
-       <option value="января">Январь</option>
-       <option value="февраля">Февраль</option>
-       <option value="марта">Март</option>
-       <option value="апреля">Апрель</option>
-       <option value="мая">Май</option>
-       <option value="июня">Июнь</option>
-       <option value="июля">Июль</option>
-       <option value="августа">Август</option>
-       <option value="сентября">Сентябрь</option>
-       <option value="октября">Октябрь</option>
-       <option value="ноября">Ноябрь</option>
-       <option value="декабря">Декабрь</option>
+      {options.map((option, index) => (
+        <option
+          key={index}
+          value={option.value}
+          selected={option.value === defaultValue}
+        >
+          {option.label}
+        </option>
+      ))}
     </>
-  )
-}
+  );
+};
 
 export default OptionsMouthComponent;

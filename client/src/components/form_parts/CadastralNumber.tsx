@@ -9,6 +9,13 @@ import { CadastralNumberPartType } from "@types-my/Form.type"
 const CadastralNumber:FC = () => {
  const { register, watch, setValue, formState: { errors } } = useFormContext<CadastralNumberPartType>();
 
+
+  const ls_1 = localStorage.getItem('c_1') || ''
+  const ls_2 = localStorage.getItem('c_2') || ''
+  const ls_3 = localStorage.getItem('c_3') || ''
+  const ls_4 = localStorage.getItem('c_y') || ''
+
+
 const c_1 = watch('cadastral_number_1');
 const c_2 = watch('cadastral_number_2');
 const c_3 = watch('cadastral_number_3');
@@ -38,6 +45,7 @@ useEffect(()=> {
        <div className="part_row_inputs">
         <label>Кадастровый номер</label>
             <input
+            defaultValue={ls_1}
             placeholder='XX'
             id='c_1'
             type="number"
@@ -53,6 +61,7 @@ useEffect(()=> {
 
 
             <input
+            defaultValue={ls_2}
             id='c_2'
             placeholder='XX'
             type="number" 
@@ -68,6 +77,7 @@ useEffect(()=> {
 
 
             <input
+            defaultValue={ls_3}
             placeholder='XXXXXXX'
             id="c_3"
             type="number"
@@ -83,6 +93,7 @@ useEffect(()=> {
 
 
             <input
+            defaultValue={ls_4}
             placeholder='X'
             id='c_y'
             type="number"

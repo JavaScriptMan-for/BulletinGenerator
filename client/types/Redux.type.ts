@@ -1,7 +1,9 @@
-import { GeneralInfoToServer, VariousInfo } from "./Form.type"
+import { GeneralInfoToServer, VariousInfo, VariousInfoToServer } from "./Form.type"
 export interface VariousInfoState {
     various_info: VariousInfo[],
-    isClick: number
+    various_info_to_server: VariousInfoToServer[],
+    isClick: number,
+    isValid: boolean[]
 }
 export interface GeneralInfoState  {
     general_info: GeneralInfoToServer

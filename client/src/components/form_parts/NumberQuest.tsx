@@ -7,16 +7,17 @@ import { NumberQuestionPartType } from "@types-my/Form.type"
 
 const NumberQuest:FC = () => {
   const { register, formState: { errors } } = useFormContext<NumberQuestionPartType>();
-
+  const ls = localStorage.getItem('number_quest') || ''
   return (
     <div id='number_quest'>
        <div className="part_row_inputs">
-        <label htmlFor="number_quest">Число вопросов повестки дня</label>
+        <label className='number_quest_text' htmlFor="number_quest">Число вопросов повестки дня</label>
       <input
       id='number_quest'
       placeholder='1'
        type="number"
-       {...register('number_quest', {
+       defaultValue={ls}
+       {...register('number_questions', {
         required: "Это поле обязательное",
         min: {
           value: 1,
@@ -30,7 +31,7 @@ const NumberQuest:FC = () => {
        />
        </div>
        <div className="validate_errors">
-        
+          <p className="validate_error number_quest_text">{errors.number_questions && errors.number_questions.message}</p>
        </div>
     </div>
   )

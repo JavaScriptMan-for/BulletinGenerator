@@ -48,7 +48,7 @@ class RedactController {
         try {
             const { general_info, various_info } = req.body;
 
-
+            res.setHeader('Content-Type', 'application/json');
             const count: number = various_info.length
 
             //Валидация
@@ -442,6 +442,7 @@ class RedactController {
             res.send(buffer);
         } catch (error) {
             res.status(500).json({ message: "Ошибка сервера" })
+            console.log(error)
         }
     }
 }

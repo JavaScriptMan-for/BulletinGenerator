@@ -8,7 +8,7 @@ import { AreaPartType } from "@types-my/Form.type"
 
 const Area:FC = () => {
 const { register, watch, setValue, formState: { errors } } = useFormContext<AreaPartType>();
-
+const ls = localStorage.getItem('area') || ''
     const area_value = watch('area');
     
     useEffect(()=> {
@@ -23,6 +23,7 @@ const { register, watch, setValue, formState: { errors } } = useFormContext<Area
        <div className="part_row_inputs">
         <label htmlFor="area_input">Площадь</label>
         <input
+        defaultValue={ls}
         id='area_input'
         placeholder='10000'
         type="number"

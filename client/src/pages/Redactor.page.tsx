@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
 import "../sass/redactor_page.scss"
 import "../sass/button.scss"
 
@@ -22,24 +22,64 @@ const RedactorPage: FC = () => {
     const navigation = useNavigate();
 
     const methods = useForm<GeneralInfo>({ mode: 'onBlur' });
-    const { handleSubmit, formState: {isValid} } = methods;
+    const { handleSubmit, reset, formState: {isValid}, watch } = methods;
+
+    const save = (data: GeneralInfo) => {
+        localStorage.setItem('day', String(data.day))
+        localStorage.setItem('mouth', String(data.mouth))
+        localStorage.setItem('year', String(data.year))
+        localStorage.setItem('c_1', String(data.cadastral_number_1))
+        localStorage.setItem('c_2', String(data.cadastral_number_2))
+        localStorage.setItem('c_3', String(data.cadastral_number_3))
+        localStorage.setItem('c_y', String(data.cadastral_number_y))
+        localStorage.setItem('area', String(data.area))
+        localStorage.setItem('address', String(data.address))
+        localStorage.setItem('number_quest', String(data.number_questions))
+    }
+
+    
+  const watchedValues = watch(); // Получаем значения всех полей
+
+  const isFormEmpty = useMemo(() => {
+    // Проверяем, являются ли все значения полей пустыми
+    return Object.values(watchedValues).every(value => !value);
+  }, [watchedValues]);
 
     const onSubmit = (data: GeneralInfo) => {
         console.log(data);
+
+        save(data)
+
         const date_izn: string = `${data.day} ${data.mouth} ${data.year} года`
         const cadastral_number_izn: string = `${data.cadastral_number_1}:${data.cadastral_number_2}:${data.cadastral_number_3}:${data.cadastral_number_y}`
         const area_izn: string = `${data.area} кв. м`
+        const n_q_izn: number | '____' = data.number_questions
 
         const generalInfo: GeneralInfoToServer = {
           date: date_izn,
           cadastral_number: cadastral_number_izn,
           area: area_izn,
           address: data.address,
-          number_questions: data.number_questions
+          number_questions: n_q_izn
         }
+        console.log(generalInfo)
         dispatch(setGeneralInfo(generalInfo))
 
         navigation(Links.VARIOUS)
+      }
+
+      const ResetValues = () => {
+        reset();
+        localStorage.removeItem('day');
+        localStorage.removeItem('mouth');
+        localStorage.removeItem('year');
+        localStorage.removeItem('c_1');
+        localStorage.removeItem('c_2');
+        localStorage.removeItem('c_3');
+        localStorage.removeItem('c_y');
+        localStorage.removeItem('area');
+        localStorage.removeItem('address');
+        localStorage.removeItem('number_quest');
       }
 
     return (
@@ -53,7 +93,11 @@ const RedactorPage: FC = () => {
                     <Area />
                     <Address />
                     <NumberQuest />
+                    <div className="line">
+                    <button onClick={ResetValues} disabled={isFormEmpty} >Сбросить все поля</button>
                     <button disabled={!isValid} className='next' type="submit">Далее</button>
+                    </div>
+
                 </form>
             </FormProvider>
         </>
