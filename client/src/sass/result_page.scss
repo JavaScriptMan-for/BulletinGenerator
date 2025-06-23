@@ -1,0 +1,41 @@
+ @font-face {
+    font-family: Montserrat-Italic;
+    src: url("/fonts/Montserrat-Italic.ttf");
+ }
+ .validate_error {
+    margin-left: 30px;
+    color: red;
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+}
+#info_file {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#finally {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#download {
+    height: 50px;
+}
+a {
+    transition: 300ms;
+    text-decoration: none;
+    color: blue;
+    font-size: 30px;
+    font-family: "Montserrat-Italic", sans-serif;
+    &:hover {
+        color: rgb(42, 42, 177);
+    }
+}
+.center {
+    display: flex;
+    justify-content: center;
+}

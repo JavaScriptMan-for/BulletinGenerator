@@ -32,6 +32,10 @@ const ls = localStorage.getItem('area') || ''
             min: {
                 value: 1,
                 message: "Некорректная площадь"
+            },
+            max: {
+              value: 9999999999,
+              message: "Некорректная площадь"
             }
         })}
         />

@@ -9,13 +9,13 @@ import {
     ISectionOptions,
     ISectionPropertiesOptions,
     ImageRun,
-    ShadingType,
     BorderStyle,
     WidthType,
     Table, TableRow, TableCell
 } from "docx";
 
 import fs from "fs"
+import { console } from "inspector";
 
 
 interface GeneralInfoType {
@@ -43,21 +43,23 @@ interface BodyType {
 
 const imagePath = "./static/Vote.png";
 
+
 class RedactController {
     public async postData(req: Request<{}, {}, BodyType>, res: Response): Promise<any> {
         try {
             const { general_info, various_info } = req.body;
 
+            console.log(various_info, general_info)
+
             res.setHeader('Content-Type', 'application/json');
             const count: number = various_info.length
-
             //Валидация
 
             if (count > 300) return res.status(429).json({ message: "Превышен лимит бюллетеней" })
 
             if (general_info.date.length > 23) return res.status(400).json({ message: "Ошибка при указании даты" })
             if (general_info.cadastral_number.length < 15 || general_info.cadastral_number.length > 19) return res.status(400).json({ message: "Ошибка при вводе кадастрового номера" })
-            if (general_info.area.length < 11) return res.status(400).json({ message: "Неверно указана площадь" })
+            if (general_info.area.length > 15 || general_info.area.length < 5) return res.status(400).json({ message: "Неверно указана площадь" })
             if(general_info.address.length > 146) return res.status(400).json({message: "Слишком длинный адрес"})
 
 
@@ -77,7 +79,9 @@ class RedactController {
             function createPage(general_info: GeneralInfoType, various_info: VariousInfoType[], count: number) {
 
                 let share_text: string = `(размер доли в праве)`
-                let name_representative_text: string = `(представитель ${various_info[count].name_representative})`
+                const name_representative_text: string = various_info[count].isRepresentative == false ?
+                 `(представитель ${various_info[count].name_representative}) ${various_info[count].isRepresentative}` :
+                 ''
                 let size_address: number = 52
 
 
@@ -87,9 +91,6 @@ class RedactController {
                     share_text = `(размер доли в праве)`
                 }
 
-                if (!various_info[count].isRepresentative) {
-                    name_representative_text = ""
-                }
                 if(general_info.address.length > 97) {
                     size_address = 46
                 } else {
@@ -439,7 +440,7 @@ class RedactController {
 
             res.setHeader('Content-Disposition', `attachment; filename="bullet.docx`);
             res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
-            res.send(buffer);
+            res.status(200).send(buffer);
         } catch (error) {
             res.status(500).json({ message: "Ошибка сервера" })
             console.log(error)

@@ -1,5 +1,7 @@
 import { FC, useEffect, useMemo, useCallback } from 'react';
 import "../sass/result_page.scss"
+import { Link } from 'react-router-dom';
+import { Links } from "@enums/Links.enum"
 
 import { useMutation } from '@tanstack/react-query';
 import { useSelector } from 'react-redux';
@@ -9,6 +11,8 @@ import { useAppDispatch } from '@slices-my/store';
 import { addVariousInfoToServer } from '@slices-my/various_info.slice';
 import { VariousInfoToServer } from '@types-my/Form.type';
 import { FullInfo } from '@types-my/Fetch.type';
+
+import wordImg from "/img/word.png"
 
 const ResultPage: FC = () => {
   const various_data = useSelector((state: RootState) => state.various_info.various_info_to_server);
@@ -33,9 +37,10 @@ const ResultPage: FC = () => {
         share_size_with_common_denominator,
       };
 
-      for (let j = 0; j < general_info.number_questions; j++) {
-        newData.push({ ...obj, number_day: j });
-      }
+    for (let j = 0; j <= general_info.number_questions; j++) {
+  const number_day = j == general_info.number_questions ? '____' : j + 1;
+  newData.push({ ...obj, number_day });
+  }
     }
     dispatch(addVariousInfoToServer(newData));
   }, [various_info, general_info, dispatch]);
@@ -63,17 +68,14 @@ const ResultPage: FC = () => {
       const contentType = res.headers.get("Content-Type");
 
         if (contentType && contentType.includes("application/json")) {
-           req = res.json(); 
+           req = await res.json(); 
           if(!res.ok) throw new Error(req.message)
         } else if (contentType && contentType.includes("application/vnd.openxmlformats-officedocument.wordprocessingml.document")) {
-          req = res.blob(); 
+          req = await res.blob(); 
           return req
         } else {
             throw new Error("Unexpected content type");
         }
-
-
-
     }
   });
 
@@ -93,25 +95,51 @@ const ResultPage: FC = () => {
 
       if(!blob) throw new Error('Ошибка')
 
-      const url = window.URL.createObjectURL(blob); // Use window.URL
+      const url = window.URL.createObjectURL(blob); 
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'document.docx'); // Use setAttribute
+      link.setAttribute('download', 'bullet.docx');
       document.body.appendChild(link);
-      link.style.display = 'none'; // Hide the link
+      link.style.display = 'none'; 
       link.click();
-      window.URL.revokeObjectURL(url);  // Use window.URL
+      window.URL.revokeObjectURL(url); 
       document.body.removeChild(link);
     } catch (error: any) {
       console.error('Error downloading document:', error.message);
     }
   }, [mutation, req_body]);
 
+  const handleBack = () => {
+      document.location.pathname = '/';
+
+        localStorage.removeItem('day');
+        localStorage.removeItem('mouth');
+        localStorage.removeItem('year');
+        localStorage.removeItem('c_1');
+        localStorage.removeItem('c_2');
+        localStorage.removeItem('c_3');
+        localStorage.removeItem('c_y');
+        localStorage.removeItem('area');
+        localStorage.removeItem('address');
+        localStorage.removeItem('number_quest');
+  }
+
   return (
     <>
       <h1>Финальный этап</h1>
-      <p>{mutation.error && mutation.error.message}</p>
-      <button disabled={mutation.isError} onClick={handleDownload}>Скачать</button>
+      <div id="finally">
+           <div id="info_file">
+        <img width={48} src={wordImg} alt="Word Document" />
+        <span>bullet.docx</span>
+      </div>
+     
+     <button id='download' disabled={mutation.isError || mutation.isPending} onClick={handleDownload}>{mutation.isPending ? 'Генерация...' : 'Скачать'}</button>
+      <p className='validate_error'>{mutation.error && mutation.error.message}</p>
+      </div>
+      {!mutation.isError && <span>Ваши бюллетени успешно сгенерировались. В случае каких-либо неисправностей прошу Вас написать нам 
+      сюда: <code>ivan.minevskiy@yandex.ru</code> .
+      </span>}
+      <div className='center'><Link onClick={handleBack} to={Links.MAIN_PAGE}>Вернуться назад</Link></div>
     </>
   );
 };
