@@ -10,14 +10,16 @@ export interface GeneralInfo {
     cadastral_number_y: number
     area: number,
     address: string,
-    number_questions: number
+    number_questions: number,
+    isShareWithCommon: boolean | string
 }
 export interface GeneralInfoToServer {
     date: string,
     cadastral_number: string,
     area: string,
     address: string,
-    number_questions: number
+    number_questions: number,
+    isShareWithCommon: boolean | string
 }
 
 export interface VariousInfoToServer {
@@ -66,6 +68,8 @@ export interface AddressPartType {
 export interface NumberQuestionPartType {
     number_questions: number
 }
+
+export type isShareWithCommonPartType = {isShareWithCommon: boolean}
 
 export interface FractionAndFIO {
     name: string,

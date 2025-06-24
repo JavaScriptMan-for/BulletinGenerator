@@ -26,7 +26,7 @@ const ResultPage: FC = () => {
 
     for (let i = 0; i < various_info.length; i++) {
       const share_size = various_info[i].fraction === 'в доле' ? `${various_info[i].share_size_ch}/${various_info[i].share_size_z}` : `${various_info[i].share_size_ch} га`;
-      const share_size_with_common_denominator = `${various_info[i].share_size_with_common_ch}/${various_info[i].share_size_with_common_z}`;
+      const share_size_with_common_denominator = general_info.isShareWithCommon ? `${various_info[i].share_size_with_common_ch}/${various_info[i].share_size_with_common_z}` : '';
 
       const obj = {
         name: various_info[i].name,
@@ -136,7 +136,7 @@ const ResultPage: FC = () => {
 
   return (
     <>
-      <h1>Финальный этап</h1>
+      <h1 style={{marginLeft: "30px"}}>Финальный этап</h1>
       <div id="finally">
            <div id="info_file">
         <img width={48} src={wordImg} alt="Word Document" />
@@ -147,7 +147,7 @@ const ResultPage: FC = () => {
       <p className='validate_error'>{mutation.error && mutation.error.message}</p>
       </div>
 
-      {!mutation.isError && <span>Ваши бюллетени успешно сгенерировались. В случае каких-либо неисправностей прошу Вас написать нам 
+      {!mutation.isError && <span style={{marginLeft: '0px', textAlign: 'center'}}>Ваши бюллетени успешно сгенерировались. В случае каких-либо неисправностей прошу Вас написать нам 
       сюда: <code>ivan.minevskiy@yandex.ru</code> .
       </span>}
       <div className='center'><Link onClick={handleBack} to={Links.MAIN_PAGE}>Вернуться назад</Link></div>

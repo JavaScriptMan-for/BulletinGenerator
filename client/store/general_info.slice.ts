@@ -9,7 +9,8 @@ const initialState: GeneralInfoState = {
         cadastral_number: '',
         area: '',
         address: '',
-        number_questions: 1
+        number_questions: 1,
+        isShareWithCommon: true
     }
 };
 

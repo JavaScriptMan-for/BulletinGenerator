@@ -23,7 +23,8 @@ interface GeneralInfoType {
     cadastral_number: string,
     area: string,
     address: string,
-    number_questions: number
+    number_questions: number,
+    isShareWithCommon: boolean | string
 }
 
 interface VariousInfoType {
@@ -78,10 +79,8 @@ class RedactController {
 
             function createPage(general_info: GeneralInfoType, various_info: VariousInfoType[], count: number) {
 
-                let share_text: string = `(размер доли в праве)`
-                const name_representative_text: string = various_info[count].isRepresentative == false ?
-                 `(представитель ${various_info[count].name_representative}) ${various_info[count].isRepresentative}` :
-                 ''
+                let share_text: string = `(размер доли в праве) ${general_info.isShareWithCommon}`
+                const name_representative_text: string =  `(представитель ${various_info[count].name_representative})`
                 let size_address: number = 52
 
 
@@ -192,7 +191,7 @@ class RedactController {
                                 alignment: AlignmentType.CENTER,
                                 children: [
                                     new TextRun({
-                                        text: name_representative_text,
+                                        text: various_info[count].isRepresentative ? name_representative_text : '',
                                         font: "Times New Roman",
                                         size: 56,
                                         bold: true
@@ -241,7 +240,7 @@ class RedactController {
                                                         alignment: AlignmentType.CENTER,
                                                         children: [
                                                             new TextRun({
-                                                                text: various_info[count].share_size_with_common_denominator,
+                                                                text: general_info.isShareWithCommon == 'true' ? various_info[count].share_size_with_common_denominator : ``,
                                                                 font: "Times New Roman",
                                                                 size: 42
                                                             })
@@ -304,7 +303,7 @@ class RedactController {
                                                         alignment: AlignmentType.CENTER,
                                                         children: [
                                                             new TextRun({
-                                                                text: "(доля с общим знаменателем)",
+                                                                text: general_info.isShareWithCommon == 'true' ? "(доля с общим знаменателем)" : '',
                                                                 font: "Times New Roman",
                                                                 size: 32
                                                             })

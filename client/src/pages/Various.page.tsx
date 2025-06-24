@@ -52,12 +52,11 @@ const Various_page: FC = () => {
   }, [])
 
   useEffect(() => {
-    // Проверяем, все ли формы валидны, когда меняется isValid
     if (isValid.length > 0) {
       const allFormsValid = isValid.every(item => item === true);
       setIsValidForms(allFormsValid);
     } else {
-      setIsValidForms(false); // Если isValid пуст, считаем, что формы не валидны
+      setIsValidForms(false); 
     }
   }, [isValid]);
 

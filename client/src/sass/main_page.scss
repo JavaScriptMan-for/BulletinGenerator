@@ -43,36 +43,36 @@ main {
 
 
 @media screen and (max-width: 1700px) {
- h1 {
+ h1#main_h {
     margin-top: -200px;
  }
 }
 @media screen and (max-width: 1300px) {
-    h1 {
+    h1#main_h {
         font-size: 120px !important;
     } 
 }
 @media screen and (max-width: 957px) {
-        h1 {
+        h1#main_h {
         font-size: 100px;
         line-height: 120px;
     }
 }
 @media screen and (max-width: 530px) {
-    h1 {
+    h1#main_h {
         font-size: 80px !important;
         line-height: 90px !important;
     }
 }
 @media screen and (max-width: 430px) {
-    h1 {
+    h1#main_h {
         font-size: 60px !important;
         line-height: 70px !important;
         backdrop-filter: blur(0px);
     }
 }
 @media screen and (max-width: 300px) {
-    h1 {
+    h1#main_h {
         margin-bottom: 10px !important;
         font-size: 40px !important;
         line-height: 50px !important;
@@ -80,7 +80,7 @@ main {
     }
 }
 @media screen and (max-width: 250px) {
-    h1 {
+    h1#main_h {
         margin-left: 2px !important;
     }
 }

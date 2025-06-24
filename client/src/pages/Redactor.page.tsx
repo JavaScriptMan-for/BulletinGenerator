@@ -11,6 +11,7 @@ import DateComponent from "@components/form_parts/Date"
 import CadastralNumber from '@components/form_parts/CadastralNumber';
 import Area from '@components/form_parts/Area';
 import Address from '@components/form_parts/Address';
+import IsShareWithCommon from '@components/form_parts/isShareWithCommon';
 import NumberQuest from '@components/form_parts/NumberQuest';
 
 import { setGeneralInfo } from '@slices-my/general_info.slice';
@@ -21,7 +22,11 @@ const RedactorPage: FC = () => {
     const dispatch = useAppDispatch();
     const navigation = useNavigate();
 
-    const methods = useForm<GeneralInfo>({ mode: 'onBlur' });
+  const ls = localStorage.getItem('isShareWithCommon') || 'false'
+
+    const methods = useForm<GeneralInfo>({ mode: 'onBlur', defaultValues: {
+      isShareWithCommon: ls
+    } });
     const { handleSubmit, reset, formState: {isValid}, watch } = methods;
 
     const save = (data: GeneralInfo) => {
@@ -33,7 +38,8 @@ const RedactorPage: FC = () => {
         localStorage.setItem('c_3', String(data.cadastral_number_3))
         localStorage.setItem('c_y', String(data.cadastral_number_y))
         localStorage.setItem('area', String(data.area))
-        localStorage.setItem('address', String(data.address))
+        localStorage.setItem('address', String(data.address));
+        localStorage.setItem('isShareWithCommon', String(data.isShareWithCommon))
         localStorage.setItem('number_quest', String(data.number_questions))
     }
 
@@ -50,17 +56,21 @@ const RedactorPage: FC = () => {
 
         save(data)
 
+        console.log(data.isShareWithCommon)
+
         const date_izn: string = `${data.day} ${data.mouth} ${data.year} года`
         const cadastral_number_izn: string = `${data.cadastral_number_1}:${data.cadastral_number_2}:${data.cadastral_number_3}:${data.cadastral_number_y}`
         const area_izn: string = `${data.area} кв. м`
-        const n_q_izn: number | '____' = data.number_questions
+        const n_q_izn: number | '____' = data.number_questions;
+        const is_share_size_with_common_izn: boolean | string = data.isShareWithCommon
 
         const generalInfo: GeneralInfoToServer = {
           date: date_izn,
           cadastral_number: cadastral_number_izn,
           area: area_izn,
           address: data.address,
-          number_questions: n_q_izn
+          number_questions: n_q_izn,
+          isShareWithCommon: is_share_size_with_common_izn
         }
         console.log(generalInfo)
         dispatch(setGeneralInfo(generalInfo))
@@ -79,6 +89,7 @@ const RedactorPage: FC = () => {
         localStorage.removeItem('c_y');
         localStorage.removeItem('area');
         localStorage.removeItem('address');
+        localStorage.removeItem('isShareWithCommon')
         localStorage.removeItem('number_quest');
       }
 
@@ -92,6 +103,7 @@ const RedactorPage: FC = () => {
                     <CadastralNumber />
                     <Area />
                     <Address />
+                    <IsShareWithCommon />
                     <NumberQuest />
                     <div className="line">
                     <button onClick={ResetValues} disabled={isFormEmpty} >Сбросить все поля</button>
