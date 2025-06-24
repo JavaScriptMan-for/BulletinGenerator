@@ -15,3 +15,22 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+#instruction {
+      display: inline-flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+
+  margin-top: 300px;
+  img {
+    width: 1000px;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    &::after {
+      content: none;
+    }
+  }
+  
+}

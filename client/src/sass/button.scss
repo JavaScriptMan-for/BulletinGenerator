@@ -39,3 +39,25 @@ button:disabled {
     box-shadow: none;  /* Убираем тень */
   }
 }    
+@media screen and (max-width: 1300px) {
+  button {
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  button {
+    width: 200px;
+    height: 50px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 310px) {
+  button {
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+  }
+}

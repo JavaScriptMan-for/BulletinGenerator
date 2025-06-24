@@ -53,6 +53,16 @@ const ResultPage: FC = () => {
   }, [general_info, various_data]);
 
   const mutation = useMutation({
+    onSuccess: () => {
+    const end: HTMLAudioElement = new Audio();
+    const end_src = `${import.meta.env.BASE_URL}audio/end.mp3`;
+    end.src = end_src;
+    end.volume = 0.3
+
+    if(!mutation.isPending && !mutation.isError) {
+      end.play();
+    }
+    },
     mutationKey: ['docx'],
     mutationFn: async (data: FullInfo): Promise<Blob | undefined> => {
       const res = await fetch('/api/redact', {
@@ -136,6 +146,7 @@ const ResultPage: FC = () => {
      <button id='download' disabled={mutation.isError || mutation.isPending} onClick={handleDownload}>{mutation.isPending ? 'Генерация...' : 'Скачать'}</button>
       <p className='validate_error'>{mutation.error && mutation.error.message}</p>
       </div>
+
       {!mutation.isError && <span>Ваши бюллетени успешно сгенерировались. В случае каких-либо неисправностей прошу Вас написать нам 
       сюда: <code>ivan.minevskiy@yandex.ru</code> .
       </span>}

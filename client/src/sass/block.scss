@@ -20,3 +20,54 @@ span {
     font-family: Arial, sans-serif;
 }
 
+@media screen and (max-width: 1700px) {
+   #block {
+    width: 1000px !important;
+   } 
+}
+@media screen and (max-width: 1300px) {
+    #block {
+        width: 800px !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    #block {
+        width: 700px !important;
+        span {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    #block {
+        width: 500px !important;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 530px) {
+    #block {
+        width: 400px !important;
+        margin-bottom: 10px !important;
+    }
+}
+@media screen and (max-width: 430px) {
+    #block {
+        width: 300px !important;
+    }
+}
+@media screen and (max-width: 310px) {
+    #block {
+        width: 200px !important;
+        span {
+            font-size: 15px !important;
+        }
+    }
+}
+@media screen and (max-width: 250px) {
+    #block {
+        width: 100px !important;
+        span {
+            font-size: 10px !important;
+        }
+    }
+}

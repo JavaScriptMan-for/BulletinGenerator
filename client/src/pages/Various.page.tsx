@@ -19,44 +19,55 @@ const Various_page: FC = () => {
   const general_info = useSelector((state: RootState) => state.general_info.general_info)
   const isValid = useSelector((state: RootState) => state.various_info.isValid)
 
-  const [forms, setForms] = useState<FormProps[]>([])
+  const [forms, setForms] = useState<FormProps[]>([]);
+  const [yesLimit, setYesLimit] = useState<boolean>(true);
 
   interface FormProps {
     id: number,
   }
 
-        const deleteForm = useCallback((id: number) => {
-            setForms(prevForms => prevForms.filter((form) => form.id !== id));
-         }, []);
+  const deleteForm = useCallback((id: number) => {
+    setForms(prevForms => prevForms.filter((form) => form.id !== id));
+  }, []);
 
-      useEffect(() => {
-      const defaultForms = () => {
-        const newForms: FormProps[] = [];
-        for (let i = 1; i < 6; i++) {
-            newForms.push({id: i});
-        }
-        setForms(newForms);
+  useEffect(() => {
+    const change_limit = general_info.number_questions * forms.length;
+
+    if(change_limit > 300) {
+      setYesLimit(false)
+    } else {
+      setYesLimit(true)
+    }
+  }, [forms.length])
+
+  useEffect(() => {
+    const defaultForms = () => {
+      const newForms: FormProps[] = [];
+      for (let i = 1; i < 6; i++) {
+        newForms.push({ id: i });
       }
-      defaultForms()
-      }, [])
+      setForms(newForms);
+    }
+    defaultForms()
+  }, [])
 
-      useEffect(() => {
-          // Проверяем, все ли формы валидны, когда меняется isValid
-          if (isValid.length > 0) {
-              const allFormsValid = isValid.every(item => item === true);
-              setIsValidForms(allFormsValid);
-          } else {
-              setIsValidForms(false); // Если isValid пуст, считаем, что формы не валидны
-          }
-      }, [isValid]);
-      
+  useEffect(() => {
+    // Проверяем, все ли формы валидны, когда меняется isValid
+    if (isValid.length > 0) {
+      const allFormsValid = isValid.every(item => item === true);
+      setIsValidForms(allFormsValid);
+    } else {
+      setIsValidForms(false); // Если isValid пуст, считаем, что формы не валидны
+    }
+  }, [isValid]);
 
-      const addForm = () => {
-        const newId = forms.length + 1; // Генерируем уникальный id для новой формы
-        setForms(prevForms => [...prevForms, {id: newId}]);
-      }
 
-  
+  const addForm = () => {
+    const newId = forms.length + 1; // Генерируем уникальный id для новой формы
+    setForms(prevForms => [...prevForms, { id: newId }]);
+  }
+
+
 
 
   return (
@@ -65,16 +76,16 @@ const Various_page: FC = () => {
 
       {
         forms.map((form, index) =>
-           <Form key={form.id} id={form.id} num={index + 1} onDelete={deleteForm}/>
-      )
+          <Form key={form.id} id={form.id} num={index + 1} onDelete={deleteForm} />
+        )
       }
       <div className="center">
-      <button className='send_various' onClick={() => navigate(Links.REDACT)}>Назад</button>
-      <button onClick={addForm} className='send_various'>+ участник</button>
-      <button className='send_various next' type="button" onClick={(e) => {
-        e.preventDefault();
-        dispatch(setIsClick());
-      }}>Далее</button>
+        <button className='send_various' onClick={() => navigate(Links.REDACT)}>Назад</button>
+        <button disabled={!yesLimit} onClick={addForm} className='send_various'>+ участник</button>
+        <button className='send_various next' type="button" onClick={(e) => {
+          e.preventDefault();
+          dispatch(setIsClick());
+        }}>Далее</button>
       </div>
     </>
   )
