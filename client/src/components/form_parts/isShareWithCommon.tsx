@@ -9,11 +9,11 @@ const IsShareWithCommon:FC = () => {
 
 
     return (
-        <div className='line'>
+        <div className='part_row_inputs minus'>
          <label>Нужна ли доля с общим знаменателем?</label>
                 <label className='label-fraction'>
                     <input
-                    
+                        className='no'
                         type="radio"
                         value="true"
                         {...register('isShareWithCommon')}
@@ -23,6 +23,7 @@ const IsShareWithCommon:FC = () => {
 
                 <label className='label-fraction'>
                     <input
+                    className='no'
                         type="radio"
                         value="false"
                         {...register('isShareWithCommon')}

@@ -57,7 +57,7 @@ const Form: FC<Props> = ({ id, onDelete, num }) => {
         <>
             <span className='number_form'>
                 #{num}
-                <img onClick={() => onDelete(id)} id='delete_icon' width={36} src={deleteIcon} alt="Удалить участника" />
+                <img onClick={() => onDelete(id)} className='delete_icon' width={36} src={deleteIcon} alt="Удалить участника" />
             </span>
             <FormProvider {...methods}>
                 <form className='various'>

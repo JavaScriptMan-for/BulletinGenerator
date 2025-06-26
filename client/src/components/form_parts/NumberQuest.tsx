@@ -10,10 +10,10 @@ const NumberQuest:FC = () => {
   const ls = localStorage.getItem('number_quest') || ''
   return (
     <div id='number_quest'>
-       <div className="part_row_inputs">
+       <div className="part_row_inputs minus">
         <label className='number_quest_text' htmlFor="number_quest">Число вопросов повестки дня</label>
       <input
-      id='number_quest'
+      id='number_quest_input'
       placeholder='1'
        type="number"
        defaultValue={ls}

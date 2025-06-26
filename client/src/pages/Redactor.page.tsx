@@ -106,8 +106,8 @@ const RedactorPage: FC = () => {
                     <IsShareWithCommon />
                     <NumberQuest />
                     <div className="line">
-                    <button onClick={ResetValues} disabled={isFormEmpty} >Сбросить все поля</button>
-                    <button disabled={!isValid} className='next' type="submit">Далее</button>
+                    <button className='general_butt' onClick={ResetValues} disabled={isFormEmpty} >Сбросить все поля</button>
+                    <button disabled={!isValid} className='next general_butt' type="submit">Далее</button>
                     </div>
 
                 </form>

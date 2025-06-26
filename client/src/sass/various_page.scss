@@ -7,6 +7,15 @@ form.various {
     padding-top: 30px;
     border-bottom: 3px dashed black;
 }
+.text_radio {
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+#ga_input {
+    margin-left: 25px;
+}
 form {
     width: 100%;
     display: flex;
@@ -86,7 +95,7 @@ input[type=radio] {
   justify-content: space-between;
 }
 
-.number_form #delete_icon {
+.number_form .delete_icon {
     flex-shrink: 0; 
     cursor: pointer;
     margin-right: 20px;
@@ -110,4 +119,115 @@ h2 {
 }
 li::after {
     content: '#';
+}
+
+@media screen and (max-width: 970px) {
+    #fio_input, #name_res {
+        width: 200px;
+    }
+    .part {
+        gap: 0px;
+    }
+    .line {
+        gap: 3px;
+    }
+    label {
+        font-size: 15px !important;
+    }
+    form {
+        input {
+            height: 40px;
+             font-size: 18px;
+                     &::placeholder {
+            font-size: 18px;
+        }
+        }
+    }
+    .share_size {
+        width: 30px;
+        height: 30px;
+    }
+    #slash {
+        font-size: 25px;
+    }
+    .label-fraction {
+        font-size: 18px !important;
+        width: 60px;
+        margin-right: 13px;
+    }
+    input[type=radio] {
+      margin-left: 12px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .send_various {
+        margin-left: 20px;
+    }
+    .number_form {
+        font-size: 25px;
+    }
+    .delete_icon {
+        width: 25px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    #fio_input, #name_res {
+        width: 150px;
+        font-size: 15px;
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+    form {
+    label {
+        font-size: 13px !important;
+    }
+        }
+}
+@media screen and (max-width: 525px) {
+    .text_radio {
+        font-size: 13px;
+    }
+    .validate_error {
+        font-size: 10px;
+    }
+    .delete_icon {
+        margin-right: 0px;
+    }
+    .center {
+        gap: 3px;
+    }
+       button {
+        margin: 0;
+        font-size: 13px;
+    }
+        #fio_input, #name_res {
+        width: 100px;
+        font-size: 13px;
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    button {
+        height: 40px !important;
+    }
+    .share_size {
+        height: 20px;
+        width: 20px;
+        font-size: 13px;
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+    #slash {
+        font-size: 18px;
+    }
+    form {
+        label {
+            font-size: 10px !important;
+        }
+    }
 }

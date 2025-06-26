@@ -31,7 +31,7 @@ const Various_page: FC = () => {
   }, []);
 
   useEffect(() => {
-    const change_limit = general_info.number_questions * forms.length;
+    const change_limit = general_info.number_questions * forms.length + general_info.number_questions;
 
     if(change_limit > 300) {
       setYesLimit(false)

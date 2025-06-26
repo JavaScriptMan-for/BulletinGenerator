@@ -124,7 +124,7 @@ textarea {
         font-size: 20px;
     }
 }
-#number_quest {
+#number_quest_input {
     margin-bottom: 20px;
     width: 60px;
 }
@@ -138,4 +138,176 @@ textarea {
     margin-left: -100px;
     white-space: nowrap;
     width: 300px;
+}
+@media screen and (max-width: 1060px) {
+    form {
+        label {
+            text-align: right;
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+        select {
+            height: 50px !important;
+            font-size: 15px !important;
+        }
+        #mouth_input {
+            width: 200px;
+        }
+        #day_input {
+            width: 30px;
+            height: 40px;
+            font-size: 15px;
+        }
+        #year_input {
+            width: 70px;
+            height: 40px;
+            font-size: 15px;
+        }
+        #number_quest_input {
+            width: 30px;
+        }
+        #c_1, #c_2 { 
+            width: 20px;
+        }
+        #c_3 {
+            width: 300px;
+        }
+        #c_y {
+            width: 200px;
+        }
+        .part_row_inputs {
+            gap: 8px;
+        }
+        #c_1, #c_2, #c_3, #c_y, #area_input, #number_quest_input {
+           font-size: 15px;
+              height: 40px;
+              &::placeholder {
+                font-size: 15px;
+              }
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    #c_3 {
+        width: 100px !important;
+    }
+    #c_y {
+        width: 70px !important;
+    }
+    .minus {
+        margin-left: -30px;
+    }
+    .label-fraction {
+        white-space: unset;
+        font-size: 20px;
+        margin: 0;
+        gap: 0;
+        padding: 0;
+    }
+    .no {
+        width: 20px !important;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 580px) {
+    h1 {
+        font-size: 25px;
+    }
+    label {
+        font-size: 15px !important;
+    }
+    form {
+        textarea {
+            width: 300px;
+        }
+        #area_input {
+            width: 200px;
+        }
+    }
+    #c_1, #c_2, #c_3, #c_y, #area_input, #number_quest_input, #day_input, #year_input {
+        height: 25px !important;
+         font-size: 10px;
+    }
+    #c_1, #c_2 {
+        width: 20px !important;
+    }
+    select {
+        width: 100px !important;
+    }
+}
+@media screen and (max-width: 500px) {
+            h2 {
+        font-size: 16px !important;
+    }
+    #c_3 {
+        width: 50px !important;
+        font-size: 13px !important;
+           &::placeholder {
+            font-size: 13px !important;
+        }
+    }
+    #c_y {
+        width: 40px !important;
+        font-size: 13px !important;
+        &::placeholder {
+            font-size: 13px !important;
+        }
+    }
+    .general_butt {
+        width: 140px;
+        font-size: 15px;
+    }
+    #day_input {
+        width: 20px !important;
+        font-size: 13px !important;
+        &::placeholder {
+            font-size: 13px !important;
+        }
+    }
+    #year_input {
+        width: 30px !important;
+        font-size: 13px !important;
+           &::placeholder {
+            font-size: 13px !important;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+
+    .validate_error {
+        font-size: 8px !important;
+    }
+    label {
+        font-size: 13px !important;
+    }
+    .double_t {
+        font-size: 15px;
+    }
+    #unit {
+        font-size: 13px !important;
+    }
+    #area_input {
+        width: 100px !important;
+        font-size: 13px !important;
+           &::placeholder {
+            font-size: 13px !important;
+        }
+    }
+ form {
+    textarea {
+        width: 150px !important;
+        font-size: 13px !important;
+           &::placeholder {
+            font-size: 13px !important;
+        }
+    }
+ }
+}
+@media screen and (max-width: 350px) {
+    label {
+        font-size: 10px !important;
+    }
+    .general_butt {
+        font-size: 8px;
+    }
 }

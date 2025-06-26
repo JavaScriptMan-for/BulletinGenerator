@@ -1,4 +1,4 @@
-import { FC, useEffect, useMemo, useCallback } from 'react';
+import { FC, useEffect, useMemo, useCallback, useState } from 'react';
 import "../sass/result_page.scss"
 import { Link } from 'react-router-dom';
 import { Links } from "@enums/Links.enum"
@@ -18,6 +18,8 @@ const ResultPage: FC = () => {
   const various_data = useSelector((state: RootState) => state.various_info.various_info_to_server);
   const dispatch = useAppDispatch();
 
+  const [fortune, setFortune] = useState<number>(Math.floor(Math.random() * 999 + 1))
+  
   const various_info = useSelector((state: RootState) => state.various_info.various_info);
   const general_info = useSelector((state: RootState) => state.general_info.general_info);
 
@@ -84,7 +86,7 @@ const ResultPage: FC = () => {
           req = await res.blob(); 
           return req
         } else {
-            throw new Error("Unexpected content type");
+            throw new Error("Ошибка, связанная с неожиданным типом данных");
         }
     }
   });
@@ -99,16 +101,17 @@ const ResultPage: FC = () => {
   
 
 
-   const handleDownload = useCallback(async () => {
+   const handleDownload = useCallback(async ():Promise<void> => {
     try {
       const blob = await mutation.mutateAsync(req_body);
 
       if(!blob) throw new Error('Ошибка')
 
+      setFortune(Math.floor(Math.random() * 999 + 1));
       const url = window.URL.createObjectURL(blob); 
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', 'bullet.docx');
+      link.setAttribute('download', `bullet-${fortune}.docx`);
       document.body.appendChild(link);
       link.style.display = 'none'; 
       link.click();
@@ -140,7 +143,7 @@ const ResultPage: FC = () => {
       <div id="finally">
            <div id="info_file">
         <img width={48} src={wordImg} alt="Word Document" />
-        <span>bullet.docx</span>
+        <span>bullet-{fortune}.docx</span>
       </div>
      
      <button id='download' disabled={mutation.isError || mutation.isPending} onClick={handleDownload}>{mutation.isPending ? 'Генерация...' : 'Скачать'}</button>

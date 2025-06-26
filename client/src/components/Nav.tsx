@@ -15,7 +15,7 @@ const NavComponent: FC = () => {
       <NavLink id='logo' to={Links.MAIN_PAGE}><img src={logo} alt="logo" /></NavLink>
       <div id="a">
         <NavLink to={Links.MAIN_PAGE}>Главная</NavLink>
-        <NavLink to={Links.REDACT}>{window_size.width > 436 ? 'Конструктор бюллетеней' : 'Конструктор'}</NavLink>
+        <NavLink to={Links.REDACT}>{window_size.width > 458 ? 'Конструктор бюллетеней' : 'Конструктор'}</NavLink>
       </div>
     </nav>
   )

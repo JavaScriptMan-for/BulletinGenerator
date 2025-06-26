@@ -63,7 +63,6 @@ useEffect(()=> {
              />
             <span className='double_t'>:</span> 
 
-
             <input
             defaultValue={ls_2}
             id='c_2'

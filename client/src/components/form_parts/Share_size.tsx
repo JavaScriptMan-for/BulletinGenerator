@@ -16,11 +16,8 @@ const ShareSize: FC<Props> = ({ fraction }) => {
     formState: { errors },
   } = useFormContext<Share>();
 
-  // Получаем объект general_info из Redux.
   const general_info = useSelector((state: RootState) => state.general_info.general_info);
 
-  // Вычисляем значение прямо в рендере.
-  const isShareSize = general_info?.isShareWithCommon === true;
 
   return (
     <div id="share">
@@ -40,7 +37,7 @@ const ShareSize: FC<Props> = ({ fraction }) => {
         />
         {fraction === 'в доле' && (
           <>
-            <span>/</span>
+            <span id='slash'>/</span>
             <input
               type="number"
               className="share_size"
@@ -61,7 +58,7 @@ const ShareSize: FC<Props> = ({ fraction }) => {
             <input
               className="share_size"
               type="text"
-              placeholder="1"
+              placeholder="288"
               {...register('share_size_with_common_ch', {
                 required: 'Это поле обязательное',
                 min: {
@@ -74,7 +71,7 @@ const ShareSize: FC<Props> = ({ fraction }) => {
             <input
               className="share_size"
               type="text"
-              placeholder="2"
+              placeholder="512"
               {...register('share_size_with_common_z', {
                 required: 'Это поле обязательное',
                 min: {

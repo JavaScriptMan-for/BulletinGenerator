@@ -29,7 +29,7 @@ interface GeneralInfoType {
 
 interface VariousInfoType {
     fraction: 'в доле' | 'га',
-    isRepresentative: boolean,
+    isRepresentative: boolean | string,
     name: string,
     name_representative: string,
     share_size: string,
@@ -191,7 +191,7 @@ class RedactController {
                                 alignment: AlignmentType.CENTER,
                                 children: [
                                     new TextRun({
-                                        text: various_info[count].isRepresentative ? name_representative_text : '',
+                                        text: various_info[count].isRepresentative == 'true' ? name_representative_text : '',
                                         font: "Times New Roman",
                                         size: 56,
                                         bold: true
