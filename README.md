@@ -2,9 +2,9 @@
 
 ## Как использовать?
 1. Вводим общую информацию
-![Первый скриншот]('./client/public/img/screen_1.png')
+![Первый скриншот](./client/public/img/screen_1.png)
 2. Вводим информацию для каждого участника
-![Второй скриншот]('./client/public/img/screen_2.png')
+![Второй скриншот](./client/public/img/screen_2.png)
 3. Скачиваем получившийся файл
 ![Третий скриншот](./client/public/img/screen_3.png)
 
