@@ -17,8 +17,11 @@ import NumberQuest from '@components/form_parts/NumberQuest';
 import { setGeneralInfo } from '@slices-my/general_info.slice';
 import { Links } from "@enums/Links.enum"
 import { useNavigate } from 'react-router-dom';
+import { useUnloadWarning } from '../hooks/useAlertUpload.hook';
 
 const RedactorPage: FC = () => {
+    useUnloadWarning(true)
+
     const dispatch = useAppDispatch();
     const navigation = useNavigate();
 

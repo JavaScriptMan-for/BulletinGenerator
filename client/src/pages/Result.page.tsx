@@ -13,8 +13,11 @@ import { VariousInfoToServer } from '@types-my/Form.type';
 import { FullInfo } from '@types-my/Fetch.type';
 
 import wordImg from "/img/word.png"
+import { useUnloadWarning } from '../hooks/useAlertUpload.hook';
 
 const ResultPage: FC = () => {
+    useUnloadWarning(true)
+
   const various_data = useSelector((state: RootState) => state.various_info.various_info_to_server);
   const dispatch = useAppDispatch();
 

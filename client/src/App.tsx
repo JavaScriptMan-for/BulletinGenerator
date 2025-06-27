@@ -2,10 +2,12 @@ import { FC, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Layout from './Layout'
 
+
 import MainPage from '@pages/Main.page'
 import ResultPage from '@pages/Result.page'
 import RedactorPage from '@pages/Redactor.page'
 import VariousPage from '@pages/Various.page'
+import NotFoundPage from '@pages/NotFound.page'
 
 const App:FC = () => {
 
@@ -28,6 +30,7 @@ const App:FC = () => {
               <Route path='result' element={<ResultPage />}/>
               <Route path='redact' element={<RedactorPage />}/>
               <Route path='various' element={<VariousPage />} />
+              <Route path='*' element={<NotFoundPage />} />
            </Route>
 
            

@@ -1,7 +1,7 @@
 import { FC, ReactNode, useState, useEffect, useCallback } from 'react';
 import Form from '@components/Form';
 import "../sass/various_page.scss"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Links } from '@enums/Links.enum';
 
 import { useSelector } from 'react-redux';
@@ -9,15 +9,18 @@ import { RootState } from '@slices-my/store';
 import { useAppDispatch } from '@slices-my/store';
 import { setIsClick } from '@slices-my/various_info.slice';
 
-const Various_page: FC = () => {
+import { useUnloadWarning } from '../hooks/useAlertUpload.hook';
 
-  const [isValidForms, setIsValidForms] = useState<boolean>(false)
+
+const Various_page: FC = () => {
+useUnloadWarning(true)
+
+
 
   const dispatch = useAppDispatch()
   const navigate = useNavigate()
 
   const general_info = useSelector((state: RootState) => state.general_info.general_info)
-  const isValid = useSelector((state: RootState) => state.various_info.isValid)
 
   const [forms, setForms] = useState<FormProps[]>([]);
   const [yesLimit, setYesLimit] = useState<boolean>(true);
@@ -51,22 +54,10 @@ const Various_page: FC = () => {
     defaultForms()
   }, [])
 
-  useEffect(() => {
-    if (isValid.length > 0) {
-      const allFormsValid = isValid.every(item => item === true);
-      setIsValidForms(allFormsValid);
-    } else {
-      setIsValidForms(false); 
-    }
-  }, [isValid]);
-
-
   const addForm = () => {
     const newId = forms.length + 1; // Генерируем уникальный id для новой формы
     setForms(prevForms => [...prevForms, { id: newId }]);
   }
-
-
 
 
   return (

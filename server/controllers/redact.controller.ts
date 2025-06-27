@@ -14,11 +14,11 @@ import {
     Table, TableRow, TableCell
 } from "docx";
 
+import { generate_void } from "../services/generate_void_docoment"
+
 import fs from "fs"
-import { console } from "inspector";
 
-
-interface GeneralInfoType {
+export interface GeneralInfoType {
     date: string,
     cadastral_number: string,
     area: string,
@@ -50,7 +50,6 @@ class RedactController {
         try {
             const { general_info, various_info } = req.body;
 
-            console.log(various_info, general_info)
 
             res.setHeader('Content-Type', 'application/json');
             const count: number = various_info.length
@@ -430,6 +429,8 @@ class RedactController {
             for (let i: number = 0; i < count; i++) {
                 createPage(general_info, various_info, i)
             }
+
+      generate_void(general_info) !== undefined ?  pages.push(...generate_void(general_info)) : null
 
             const doc = new Document({
                 sections: pages
