@@ -5,6 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "lib": ["DOM"],
     "baseUrl": ".",
     "paths": {
     "@components/*": ["./src/components/*"],
@@ -15,5 +16,7 @@
     "@enums/*": ["./enums/*"]
   }
   },
+
+
 
 }

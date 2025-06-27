@@ -7,9 +7,15 @@
     "server": "nodemon server.js --verbose",
     "client": "npm run dev --prefix ../client",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "tsc",
-    "prod": "npm run build && node dist/server.js",
-    "dev": "nodemon server.ts"
+    "dev": "nodemon server.ts",
+
+    "copy-static": "xcopy static dist\\static /E /I /Y",
+    "build": "rmdir /S /Q dist && tsc -b && npm run copy-static",
+
+    "copy-static-linux": "cp -r static dist/static",
+    "build-linux": "rm -rf dist && tsc -b && npm run copy-static",
+
+    "prod": "npm run build && node dist/server.js"
   },
   "keywords": [],
   "author": "",

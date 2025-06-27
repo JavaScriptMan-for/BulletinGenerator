@@ -1,4 +1,4 @@
-import express, {Request, Response, Express} from "express"
+import express, { Request, Response, Express } from "express"
 import { config } from "dotenv";
 import mainRouter from "./routes/main.route"
 import path from "path"
@@ -10,15 +10,27 @@ config()
 
 const PORT = process.env.PORT || 80
 
-app.use(cors({origin: 'localhost:3000'}))
+app.use(cors({ origin: 'localhost:3000' }))
 app.use(express.json());
+
 app.use(express.static(path.join(__dirname, "static")))
+
 app.use(bodyParser.json({ limit: "100mb" }))
 app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 
 
 //Rotes
-app.use('/api', mainRouter)
+app.use('/api', mainRouter);
+
+try {
+    app.use(express.static(path.join(__dirname, '..', '..', 'client', 'dist')))
+    app.use((req: Request, res: Response) => {
+        res.sendFile(path.join(__dirname, "..", '..', "client", 'dist'))
+    })
+} catch (error) {
+    console.error(error)
+}
+
 
 
 app.listen(PORT, () => {

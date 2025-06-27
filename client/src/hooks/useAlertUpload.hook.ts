@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 export const useUnloadWarning = (enabled: boolean) => {
   useEffect(() => {
-    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+    const handleBeforeUnload = (e: any) => {
       e.preventDefault();
       e.returnValue = ''; // Необходимо для срабатывания в некоторых браузерах
     };

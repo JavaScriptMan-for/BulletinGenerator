@@ -1,4 +1,4 @@
-import { GeneralInfo, GeneralInfoToServer, VariousInfoToServer } from "./Form.type"
+import { GeneralInfoToServer, VariousInfoToServer } from "./Form.type"
 
 export interface HiType {
     id?: number,

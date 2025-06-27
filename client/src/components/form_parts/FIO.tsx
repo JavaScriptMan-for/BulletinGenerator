@@ -8,14 +8,16 @@ const FIO: FC = () => {
     const { register, formState: { errors }, watch } = useFormContext<FractionAndFIO>();
 
     const isR = watch('isRepresentative')
-    const [isRes, setIsRes] = useState<boolean>(false)
+    const [isRes, setIsRes] = useState<string>('true')
 
     const fraction = watch('fraction')
     const [fractionState, setFractionState] = useState<'в доле' | 'га'>('в доле')
 
-    useEffect(() => {
-        setIsRes((prev) => !prev)
-    }, [isR])
+   useEffect(() => {
+    console.log(isR)
+  setIsRes(String(isR));
+}, [isR]);
+
     useEffect(() => {
         setFractionState(fraction)
     }, [fraction])
@@ -44,8 +46,8 @@ const FIO: FC = () => {
                             />
                         </div>
                         <div>
-                            {isRes && <label htmlFor="name_res">ФИО Представителя</label>}
-                            {isRes && <input
+                            {isRes == 'true' && <label htmlFor="name_res">ФИО Представителя</label>}
+                            {isRes == 'true' && <input
                                 type="text"
                                 id="name_res"
                                 placeholder='Иванов Иван Иванович'
