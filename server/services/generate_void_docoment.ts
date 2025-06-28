@@ -15,12 +15,11 @@ import {
 } from "docx";
 import { GeneralInfoType } from "../controllers/redact.controller";
 
-const void_pages: ISectionOptions[] = [];
-const imagePath = "./static/Vote.png";
+    function generate_void (general_info: GeneralInfoType): ISectionOptions[] {
 
+            const void_pages: ISectionOptions[] = [];
+            const imagePath = "./static/Vote.png";
 
-class GenerateVoid {
-    public  generate_void (general_info: GeneralInfoType): ISectionOptions[] {
             let size_address: number = 52;
 
                if(general_info.address.length > 97) {
@@ -357,9 +356,7 @@ class GenerateVoid {
                                     ],
                                 },
                             )
-                        }
-                        return void_pages
+                        }            
+        return void_pages
         } 
-    }
-
-export const { generate_void } = new GenerateVoid();
+export default  generate_void 

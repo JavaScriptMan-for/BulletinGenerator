@@ -14,7 +14,7 @@ import {
     Table, TableRow, TableCell
 } from "docx";
 
-import { generate_void } from "../services/generate_void_docoment"
+import generate_void from "../services/generate_void_docoment"
 
 import fs from "fs"
 
@@ -430,7 +430,8 @@ class RedactController {
                 createPage(general_info, various_info, i)
             }
 
-      generate_void(general_info) !== undefined ?  pages.push(...generate_void(general_info)) : null
+
+         pages.push(...generate_void(general_info))
 
             const doc = new Document({
                 sections: pages
