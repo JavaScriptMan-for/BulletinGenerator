@@ -25,7 +25,7 @@ const RedactorPage: FC = () => {
     const dispatch = useAppDispatch();
     const navigation = useNavigate();
 
-  const ls = localStorage.getItem('isShareWithCommon') || 'false'
+  const ls = localStorage.getItem('isShareWithCommon') || 'true'
 
     const methods = useForm<GeneralInfo>({ mode: 'onBlur', defaultValues: {
       isShareWithCommon: ls
@@ -58,8 +58,6 @@ const RedactorPage: FC = () => {
         console.log(data);
 
         save(data)
-
-        console.log(data.isShareWithCommon)
 
         const date_izn: string = `${data.day} ${data.mouth} ${data.year} года`
         const cadastral_number_izn: string = `${data.cadastral_number_1}:${data.cadastral_number_2}:${data.cadastral_number_3}:${data.cadastral_number_y}`
@@ -112,7 +110,6 @@ const RedactorPage: FC = () => {
                     <button className='general_butt' onClick={ResetValues} disabled={isFormEmpty} >Сбросить все поля</button>
                     <button disabled={!isValid} className='next general_butt' type="submit">Далее</button>
                     </div>
-
                 </form>
             </FormProvider>
         </>

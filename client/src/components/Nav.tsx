@@ -13,6 +13,8 @@ const NavComponent: FC = () => {
   useEffect(() => {
       if(location.pathname === Links.REDACT || location.pathname === Links.VARIOUS || location.pathname === Links.RESULT) {
         document.querySelector('#constructor_href')?.classList.add('active')
+      } else {
+        document.querySelector('#constructor_href')?.classList.remove('active')
       }
   }, [location.pathname])
 

@@ -8,37 +8,28 @@
     "client": "npm run dev --prefix ../client",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "dev": "nodemon server.ts",
-
     "copy-static": "xcopy static dist\\static /E /I /Y",
     "build": "rmdir /S /Q dist && tsc -b && npm run copy-static",
-
     "copy-static-linux": "cp -r static dist/static",
     "build-linux": "rm -rf dist && tsc -b && npm run copy-static",
-
     "prod": "npm run build && node dist/server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Minevskiy Ivan",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^2.2.0",
     "concurrently": "^9.1.2",
     "cors": "^2.8.5",
     "docx": "^9.5.0",
     "dotenv": "^16.5.0",
-    "express": "^4.21.2",
-    "express-validator": "^7.2.1",
-    "html-to-docx": "^1.8.0",
-    "mongoose": "^8.15.1"
+    "express": "^4.21.2"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.6",
     "@types/cors": "^2.8.19",
     "@types/dotenv": "^8.2.3",
     "@types/express": "^5.0.0",
-    "@types/express-validator": "^3.0.2",
-    "@types/html-to-docx": "^1.8.0",
-    "@types/mongoose": "^5.11.97",
     "nodemon": "^3.1.9"
   }
 }

@@ -173,7 +173,7 @@ class GenerateVoid {
                                                                     alignment: AlignmentType.CENTER,
                                                                     children: [
                                                                         new TextRun({
-                                                                            text: '____________________',
+                                                                            text: general_info.isShareWithCommon == 'true' ? '____________________' : '',
                                                                             font: "Times New Roman",
                                                                             size: 42
                                                                         })
@@ -236,7 +236,7 @@ class GenerateVoid {
                                                                     alignment: AlignmentType.CENTER,
                                                                     children: [
                                                                         new TextRun({
-                                                                            text: "(доля с общим знаменателем)",
+                                                                            text: general_info.isShareWithCommon == 'true' ? "(доля с общим знаменателем)" : '',
                                                                             font: "Times New Roman",
                                                                             size: 32
                                                                         })

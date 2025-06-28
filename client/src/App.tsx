@@ -17,8 +17,9 @@ const App:FC = () => {
     const l = location.pathname;
 
     if(l === '/') document.title = "Главная страница"
-    if(l === '/redact') document.title = "Конструктор бюллетеней"
-    if(l === '/settings') document.title = "Настройки"
+    if(l === '/redact') document.title = "Общая информация"
+    if(l === '/various') document.title = "Информация для всех участников"
+    if(l === '/result') document.title = 'Результат'
   }, 
   [location.pathname])
 
