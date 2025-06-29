@@ -1,0 +1,331 @@
+2025/06/29 15:53:28 [error] 4716#5920: *1 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2025/06/29 15:56:41 [error] 4716#5920: *5 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost"
+2025/06/29 15:56:57 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 15:57:15 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 15:57:16 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 15:57:17 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 15:57:18 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 15:57:18 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 15:57:18 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 15:57:19 [error] 4716#5920: *7 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:03:57 [error] 4716#5920: *9 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:03:58 [error] 4716#5920: *9 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:03:59 [error] 4716#5920: *9 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:04:00 [error] 4716#5920: *9 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:04:00 [error] 4716#5920: *9 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:04:01 [error] 4716#5920: *9 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:04:01 [error] 4716#5920: *9 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:06:56 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:00 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:06 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:07 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:07 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:08 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:08 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:08 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:08 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:19 [notice] 10036#17700: signal process started
+2025/06/29 16:07:22 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:23 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:24 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:24 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:24 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:07:25 [error] 4716#5920: *11 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:09:00 [notice] 10396#14080: signal process started
+2025/06/29 16:12:22 [emerg] 12020#5544: CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/.\nginx.conf" failed (2: The system cannot find the file specified)
+2025/06/29 16:19:21 [emerg] 5204#14356: duplicate location "/" in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:32
+2025/06/29 16:21:06 [notice] 7600#8112: signal process started
+2025/06/29 16:21:14 [error] 4716#5920: *17 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/api" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /api HTTP/1.1", host: "localhost"
+2025/06/29 16:22:20 [notice] 11244#2124: signal process started
+2025/06/29 16:22:22 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:22:23 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:22:24 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:23:21 [notice] 17656#15692: signal process started
+2025/06/29 16:23:23 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:23:24 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:23:24 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:23:24 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:23:24 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:23:24 [error] 4716#5920: *19 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:25:28 [notice] 13780#17024: signal process started
+2025/06/29 16:25:31 [error] 4716#5920: *21 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:25:32 [error] 4716#5920: *21 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:25:32 [error] 4716#5920: *21 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:25:33 [error] 4716#5920: *21 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:25:34 [error] 4716#5920: *21 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:26:22 [error] 4716#5920: *21 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:26:23 [error] 4716#5920: *21 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:30:28 [emerg] 17980#2068: "upstream" directive is not allowed here in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:1
+2025/06/29 16:30:58 [emerg] 12324#1460: "upstream" directive is not allowed here in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:1
+2025/06/29 16:31:41 [notice] 13780#17024: signal process started
+2025/06/29 16:31:44 [error] 4716#5920: *23 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:31:45 [error] 4716#5920: *23 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:31:45 [error] 4716#5920: *23 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:31:46 [error] 4716#5920: *23 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:31:46 [error] 4716#5920: *23 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:31:46 [error] 4716#5920: *23 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:31:46 [error] 4716#5920: *23 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:33:48 [error] 4716#5920: *25 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:33:49 [error] 4716#5920: *25 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:36:13 [notice] 18048#8676: signal process started
+2025/06/29 16:36:16 [error] 4716#5920: *27 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:37:18 [error] 4716#5920: *27 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:37:23 [error] 4716#5920: *27 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:37:23 [error] 4716#5920: *27 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:37:41 [error] 4716#5920: *27 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:38:53 [emerg] 16472#11444: unexpected end of file, expecting "}" in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:39
+2025/06/29 16:38:55 [emerg] 11000#18012: unexpected end of file, expecting "}" in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:39
+2025/06/29 16:39:05 [emerg] 16400#12880: unexpected end of file, expecting "}" in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:37
+2025/06/29 16:39:20 [notice] 1120#4064: signal process started
+2025/06/29 16:39:22 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:39:50 [notice] 18052#10340: signal process started
+2025/06/29 16:39:52 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:39:53 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:23 [notice] 10236#14568: signal process started
+2025/06/29 16:40:25 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:26 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:26 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:26 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:26 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:34 [notice] 8268#1816: signal process started
+2025/06/29 16:40:37 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:39 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:40 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:40 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:40:40 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:18 [notice] 10752#15684: signal process started
+2025/06/29 16:41:21 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:22 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:22 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:22 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:37 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:40 [notice] 4540#14844: signal process started
+2025/06/29 16:41:42 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:51 [notice] 17128#8100: signal process started
+2025/06/29 16:41:55 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:55 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:56 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:56 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:56 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:56 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:41:57 [error] 4716#5920: *29 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:43:56 [emerg] 12324#9708: invalid number of arguments in "root" directive in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:27
+2025/06/29 16:45:08 [emerg] 17204#14156: invalid number of arguments in "root" directive in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:27
+2025/06/29 16:45:16 [emerg] 14904#12688: invalid number of arguments in "root" directive in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:27
+2025/06/29 16:45:25 [notice] 13680#3872: signal process started
+2025/06/29 16:45:29 [error] 4716#5920: *31 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:45:30 [error] 4716#5920: *31 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:45:30 [error] 4716#5920: *31 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:45:31 [error] 4716#5920: *31 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:45:48 [error] 4716#5920: *33 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:46:46 [emerg] 7892#1972: invalid number of arguments in "root" directive in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:27
+2025/06/29 16:47:48 [emerg] 17608#14676: invalid number of arguments in "root" directive in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:27
+2025/06/29 16:48:43 [notice] 14700#14668: signal process started
+2025/06/29 16:48:48 [error] 4716#5920: *35 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:48:49 [error] 4716#5920: *35 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:48:50 [error] 4716#5920: *35 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:48:51 [error] 4716#5920: *35 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:51:50 [notice] 3852#14324: signal process started
+2025/06/29 16:51:52 [notice] 5972#12932: signal process started
+2025/06/29 16:51:54 [error] 4716#5920: *37 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:53:18 [notice] 16652#11284: signal process started
+2025/06/29 16:53:21 [error] 4716#5920: *39 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 16:53:36 [emerg] 15404#17528: CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf" failed (2: The system cannot find the file specified)
+2025/06/29 16:54:26 [emerg] 15768#8664: unexpected ";" in C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/conf/nginx.conf:10
+2025/06/29 16:54:35 [notice] 6320#12428: signal process started
+2025/06/29 16:54:38 [error] 4716#5920: *41 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 16:54:38 [error] 4716#5920: *41 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:00:01 [error] 4716#5920: *43 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /index.html HTTP/1.1", host: "localhost"
+2025/06/29 17:00:01 [error] 4716#5920: *43 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:00:08 [error] 4716#5920: *43 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 17:00:08 [error] 4716#5920: *43 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:00:15 [notice] 14252#8432: signal process started
+2025/06/29 17:00:15 [notice] 6656#6076: using the "select" event method
+2025/06/29 17:00:15 [notice] 6656#6076: start worker processes
+2025/06/29 17:00:15 [notice] 6656#6076: start worker process 14600
+2025/06/29 17:00:15 [notice] 14600#12976: nginx/1.29.0
+2025/06/29 17:00:15 [info] 14600#12976: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:00:15 [notice] 14600#12976: create thread 2948
+2025/06/29 17:00:15 [notice] 14600#12976: create thread 14868
+2025/06/29 17:00:15 [notice] 14600#12976: create thread 5484
+2025/06/29 17:00:15 [notice] 6656#6076: worker process 17528 exited with code 0
+2025/06/29 17:00:18 [error] 4716#5920: *43 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 17:00:18 [error] 4716#5920: *43 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:02:24 [notice] 17520#7524: signal process started
+2025/06/29 17:02:24 [notice] 6656#6076: reconfiguring
+2025/06/29 17:02:24 [notice] 6656#6076: using the "select" event method
+2025/06/29 17:02:24 [notice] 6656#6076: start worker processes
+2025/06/29 17:02:24 [notice] 6656#6076: start worker process 10912
+2025/06/29 17:02:24 [notice] 10912#15556: nginx/1.29.0
+2025/06/29 17:02:24 [info] 10912#15556: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:02:24 [notice] 10912#15556: create thread 14720
+2025/06/29 17:02:24 [notice] 14600#12976: gracefully shutting down
+2025/06/29 17:02:24 [notice] 10912#15556: create thread 16020
+2025/06/29 17:02:24 [notice] 14600#14868: exiting
+2025/06/29 17:02:24 [notice] 10912#15556: create thread 18204
+2025/06/29 17:02:24 [notice] 14600#2948: exiting
+2025/06/29 17:02:24 [notice] 14600#12976: exit
+2025/06/29 17:02:24 [notice] 6656#6076: worker process 14600 exited with code 0
+2025/06/29 17:02:26 [error] 4716#5920: *45 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 17:02:26 [error] 4716#5920: *45 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:02:27 [error] 4716#5920: *45 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 17:02:27 [error] 4716#5920: *45 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:02:53 [notice] 10556#16812: signal process started
+2025/06/29 17:02:53 [notice] 6656#6076: reconfiguring
+2025/06/29 17:02:53 [notice] 6656#6076: using the "select" event method
+2025/06/29 17:02:53 [notice] 6656#6076: start worker processes
+2025/06/29 17:02:53 [notice] 6656#6076: start worker process 17360
+2025/06/29 17:02:53 [notice] 17360#17084: nginx/1.29.0
+2025/06/29 17:02:53 [info] 17360#17084: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:02:53 [notice] 10912#15556: gracefully shutting down
+2025/06/29 17:02:53 [notice] 17360#17084: create thread 17864
+2025/06/29 17:02:53 [notice] 10912#16020: exiting
+2025/06/29 17:02:53 [notice] 17360#17084: create thread 12512
+2025/06/29 17:02:53 [notice] 17360#17084: create thread 7592
+2025/06/29 17:02:54 [notice] 10912#14720: exiting
+2025/06/29 17:02:54 [notice] 10912#15556: exit
+2025/06/29 17:02:54 [notice] 6656#6076: worker process 10912 exited with code 0
+2025/06/29 17:02:59 [error] 4716#5920: *45 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:03:38 [notice] 7264#11744: signal process started
+2025/06/29 17:03:38 [notice] 6656#6076: reconfiguring
+2025/06/29 17:03:38 [notice] 6656#6076: using the "select" event method
+2025/06/29 17:03:38 [notice] 6656#6076: start worker processes
+2025/06/29 17:03:38 [notice] 6656#6076: start worker process 8100
+2025/06/29 17:03:38 [notice] 8100#14672: nginx/1.29.0
+2025/06/29 17:03:38 [info] 8100#14672: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:03:38 [notice] 17360#17084: gracefully shutting down
+2025/06/29 17:03:38 [notice] 8100#14672: create thread 2140
+2025/06/29 17:03:38 [notice] 17360#12512: exiting
+2025/06/29 17:03:38 [notice] 8100#14672: create thread 14496
+2025/06/29 17:03:38 [notice] 8100#14672: create thread 12996
+2025/06/29 17:03:38 [notice] 17360#17864: exiting
+2025/06/29 17:03:38 [notice] 17360#17084: exit
+2025/06/29 17:03:38 [notice] 6656#6076: worker process 17360 exited with code 0
+2025/06/29 17:03:41 [error] 4716#5920: *46 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 17:03:41 [error] 4716#5920: *46 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:05:57 [notice] 4704#10632: signal process started
+2025/06/29 17:05:57 [notice] 6656#6076: reconfiguring
+2025/06/29 17:05:57 [notice] 6656#6076: using the "select" event method
+2025/06/29 17:05:57 [notice] 6656#6076: start worker processes
+2025/06/29 17:05:57 [notice] 6656#6076: start worker process 10392
+2025/06/29 17:05:57 [notice] 10392#4872: nginx/1.29.0
+2025/06/29 17:05:57 [info] 10392#4872: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:05:57 [notice] 8100#14672: gracefully shutting down
+2025/06/29 17:05:57 [notice] 10392#4872: create thread 13272
+2025/06/29 17:05:57 [notice] 8100#14496: exiting
+2025/06/29 17:05:57 [notice] 10392#4872: create thread 9924
+2025/06/29 17:05:57 [notice] 10392#4872: create thread 11152
+2025/06/29 17:05:57 [notice] 8100#2140: exiting
+2025/06/29 17:05:57 [notice] 8100#14672: exit
+2025/06/29 17:05:57 [notice] 6656#6076: worker process 8100 exited with code 0
+2025/06/29 17:06:18 [error] 4716#5920: *49 "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2025/06/29 17:06:18 [error] 4716#5920: *49 CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/html/.well-known/appspecific/com.chrome.devtools.json" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", host: "localhost"
+2025/06/29 17:08:43 [emerg] 13036#4968: CreateFile() "C:\Users\minev\OneDrive\Документы\Scripts and sites\Thousand copies\nginx/.\nginx.conf" failed (2: The system cannot find the file specified)
+2025/06/29 17:13:05 [notice] 6676#3132: nginx/1.29.0
+2025/06/29 17:13:05 [info] 6676#3132: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:13:05 [notice] 6676#3132: create thread 5268
+2025/06/29 17:13:05 [notice] 6676#3132: create thread 1776
+2025/06/29 17:13:05 [notice] 6676#3132: create thread 4312
+2025/06/29 17:13:16 [notice] 7352#12748: nginx/1.29.0
+2025/06/29 17:13:16 [info] 7352#12748: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:13:16 [notice] 7352#12748: create thread 10496
+2025/06/29 17:13:16 [notice] 7352#12748: create thread 1756
+2025/06/29 17:13:16 [notice] 7352#12748: create thread 3880
+2025/06/29 17:13:22 [notice] 6656#6076: worker process 10392 exited with code 1
+2025/06/29 17:13:22 [notice] 6656#6076: start worker process 6472
+2025/06/29 17:13:22 [notice] 6472#19364: nginx/1.29.0
+2025/06/29 17:13:22 [info] 6472#19364: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:13:22 [notice] 6472#19364: create thread 19212
+2025/06/29 17:13:22 [notice] 6472#19364: create thread 19128
+2025/06/29 17:13:22 [notice] 6472#19364: create thread 19120
+2025/06/29 17:13:50 [notice] 14720#4260: nginx/1.29.0
+2025/06/29 17:13:50 [info] 14720#4260: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:13:50 [notice] 14720#4260: create thread 17816
+2025/06/29 17:13:50 [notice] 14720#4260: create thread 4968
+2025/06/29 17:13:50 [notice] 14720#4260: create thread 10716
+2025/06/29 17:14:04 [notice] 19324#19336: nginx/1.29.0
+2025/06/29 17:14:04 [info] 19324#19336: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:14:04 [notice] 19324#19336: create thread 16728
+2025/06/29 17:14:04 [notice] 19324#19336: create thread 5348
+2025/06/29 17:14:04 [notice] 19324#19336: create thread 5904
+2025/06/29 17:14:28 [notice] 18904#2308: nginx/1.29.0
+2025/06/29 17:14:28 [info] 18904#2308: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:14:28 [notice] 18904#2308: create thread 5700
+2025/06/29 17:14:28 [notice] 18904#2308: create thread 18696
+2025/06/29 17:14:28 [notice] 18904#2308: create thread 18820
+2025/06/29 17:14:38 [notice] 6656#6076: worker process 6472 exited with code 1
+2025/06/29 17:14:38 [notice] 6656#6076: start worker process 19256
+2025/06/29 17:14:38 [notice] 19256#10600: nginx/1.29.0
+2025/06/29 17:14:38 [info] 19256#10600: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:14:38 [notice] 19256#10600: create thread 19160
+2025/06/29 17:14:38 [notice] 19256#10600: create thread 11020
+2025/06/29 17:14:38 [notice] 19256#10600: create thread 19244
+2025/06/29 17:18:19 [notice] 16388#16392: using the "select" event method
+2025/06/29 17:18:19 [notice] 16388#16392: nginx/1.29.0
+2025/06/29 17:18:19 [info] 16388#16392: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:18:19 [notice] 16388#16392: start worker processes
+2025/06/29 17:18:19 [notice] 16388#16392: start worker process 16660
+2025/06/29 17:18:19 [notice] 16660#16664: nginx/1.29.0
+2025/06/29 17:18:19 [info] 16660#16664: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:18:19 [notice] 16660#16664: create thread 16708
+2025/06/29 17:18:19 [notice] 16660#16664: create thread 16712
+2025/06/29 17:18:19 [notice] 16660#16664: create thread 16716
+2025/06/29 17:18:46 [info] 16660#16708: *1 client 127.0.0.1 closed keepalive connection
+2025/06/29 17:18:46 [info] 16660#16708: *2 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/06/29 17:21:55 [notice] 8460#7316: signal process started
+2025/06/29 17:21:55 [notice] 16388#16392: reconfiguring
+2025/06/29 17:21:55 [notice] 16388#16392: using the "select" event method
+2025/06/29 17:21:55 [notice] 16388#16392: start worker processes
+2025/06/29 17:21:55 [notice] 16388#16392: start worker process 12300
+2025/06/29 17:21:55 [notice] 12300#8652: nginx/1.29.0
+2025/06/29 17:21:55 [info] 12300#8652: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:21:55 [notice] 16660#16664: gracefully shutting down
+2025/06/29 17:21:55 [notice] 12300#8652: create thread 7216
+2025/06/29 17:21:55 [notice] 16660#16712: exiting
+2025/06/29 17:21:55 [notice] 12300#8652: create thread 12664
+2025/06/29 17:21:55 [notice] 12300#8652: create thread 4648
+2025/06/29 17:21:55 [notice] 16660#16708: exiting
+2025/06/29 17:21:55 [notice] 16660#16664: exit
+2025/06/29 17:21:55 [notice] 16388#16392: worker process 16660 exited with code 0
+2025/06/29 17:23:11 [notice] 17116#6876: signal process started
+2025/06/29 17:23:11 [notice] 16388#16392: reconfiguring
+2025/06/29 17:23:11 [notice] 16388#16392: using the "select" event method
+2025/06/29 17:23:11 [notice] 16388#16392: start worker processes
+2025/06/29 17:23:11 [notice] 16388#16392: start worker process 12964
+2025/06/29 17:23:11 [notice] 12964#3280: nginx/1.29.0
+2025/06/29 17:23:11 [info] 12964#3280: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:23:11 [notice] 12964#3280: create thread 2240
+2025/06/29 17:23:11 [notice] 12300#8652: gracefully shutting down
+2025/06/29 17:23:11 [notice] 12300#12664: exiting
+2025/06/29 17:23:11 [notice] 12964#3280: create thread 9836
+2025/06/29 17:23:11 [notice] 12964#3280: create thread 8564
+2025/06/29 17:23:13 [notice] 12300#7216: exiting
+2025/06/29 17:23:13 [notice] 12300#8652: exit
+2025/06/29 17:23:13 [notice] 16388#16392: worker process 12300 exited with code 0
+2025/06/29 17:23:15 [error] 12964#2240: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /assets/index-D9WUZIsM.js HTTP/1.1", upstream: "http://[::1]:500/assets/index-D9WUZIsM.js", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:15 [warn] 12964#2240: *38 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /assets/index-D9WUZIsM.js HTTP/1.1", upstream: "http://[::1]:500/assets/index-D9WUZIsM.js", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:16 [error] 12964#2240: *37 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /assets/index-B9uSgKv0.css HTTP/1.1", upstream: "http://127.0.0.1:500/assets/index-B9uSgKv0.css", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:16 [warn] 12964#2240: *37 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /assets/index-B9uSgKv0.css HTTP/1.1", upstream: "http://127.0.0.1:500/assets/index-B9uSgKv0.css", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:16 [error] 12964#2240: *37 no live upstreams while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /assets/index-B9uSgKv0.css HTTP/1.1", upstream: "http://localhost/assets/index-B9uSgKv0.css", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:16 [error] 12964#2240: *39 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", upstream: "http://127.0.0.1:500/.well-known/appspecific/com.chrome.devtools.json", host: "localhost"
+2025/06/29 17:23:16 [warn] 12964#2240: *39 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", upstream: "http://127.0.0.1:500/.well-known/appspecific/com.chrome.devtools.json", host: "localhost"
+2025/06/29 17:23:16 [error] 12964#2240: *39 no live upstreams while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1", upstream: "http://localhost/.well-known/appspecific/com.chrome.devtools.json", host: "localhost"
+2025/06/29 17:23:18 [error] 12964#2240: *38 connect() failed (10061: No connection could be made because the target machine actively refused it) while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /assets/index-D9WUZIsM.js HTTP/1.1", upstream: "http://127.0.0.1:500/assets/index-D9WUZIsM.js", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:18 [warn] 12964#2240: *38 upstream server temporarily disabled while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /assets/index-D9WUZIsM.js HTTP/1.1", upstream: "http://127.0.0.1:500/assets/index-D9WUZIsM.js", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:18 [error] 12964#2240: *38 no live upstreams while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "http://localhost/favicon.ico", host: "localhost", referrer: "http://localhost/"
+2025/06/29 17:23:20 [notice] 852#16680: signal process started
+2025/06/29 17:23:20 [notice] 16388#16392: reconfiguring
+2025/06/29 17:23:20 [notice] 16388#16392: using the "select" event method
+2025/06/29 17:23:20 [notice] 16388#16392: start worker processes
+2025/06/29 17:23:20 [notice] 16388#16392: start worker process 16520
+2025/06/29 17:23:20 [notice] 16520#9780: nginx/1.29.0
+2025/06/29 17:23:20 [info] 16520#9780: OS: 260200 build:9200, "", suite:100, type:1
+2025/06/29 17:23:20 [notice] 12964#3280: gracefully shutting down
+2025/06/29 17:23:20 [notice] 16520#9780: create thread 3796
+2025/06/29 17:23:20 [notice] 12964#9836: exiting
+2025/06/29 17:23:20 [notice] 16520#9780: create thread 4684
+2025/06/29 17:23:20 [notice] 16520#9780: create thread 4348
+2025/06/29 17:23:22 [error] 12964#2240: *43 no live upstreams while connecting to upstream, client: 127.0.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "http://localhost/", host: "localhost"
+2025/06/29 17:23:22 [notice] 12964#2240: exiting
+2025/06/29 17:23:22 [notice] 12964#3280: exit
+2025/06/29 17:23:22 [notice] 16388#16392: worker process 12964 exited with code 0
