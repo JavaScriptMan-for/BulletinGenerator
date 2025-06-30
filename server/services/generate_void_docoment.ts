@@ -217,7 +217,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                         new TextRun({
                                                                             text: '(размер доли в праве)',
                                                                             font: "Times New Roman",
-                                                                            size: 363
+                                                                            size: 36
                                                                         })
                                                                     ]
                                                                 })
