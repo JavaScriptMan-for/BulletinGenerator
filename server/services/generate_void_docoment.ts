@@ -20,7 +20,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
             const void_pages: ISectionOptions[] = [];
             const imagePath = "./static/Vote.png";
 
-            let size_address: number = 52;
+            let size_address: number = 50;
 
                if(general_info.address.length > 97) {
                     size_address = 46
@@ -73,7 +73,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                     children: [
                                                                         new TextRun({
                                                                             text: "БЮЛЛЕТЕНЬ ДЛЯ ГОЛОСОВАНИЯ",
-                                                                            size: 52,
+                                                                            size: 58,
                                                                             font: "Times New Roman",
                                                                             bold: true
                                                                         })
@@ -98,7 +98,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                         new TextRun({
                                                                             text: general_info.date,
                                                                             font: "Times New Roman",
-                                                                            size: 52
+                                                                            size: 58
                                                                         }),
                                                                     ]
                                                                 })
@@ -154,7 +154,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                         new TextRun({
                                                                             text: '___________',
                                                                             font: "Times New Roman",
-                                                                            size: 42
+                                                                            size: 54
                                                                         })
                                                                     ]
                                                                 })
@@ -174,7 +174,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                         new TextRun({
                                                                             text: general_info.isShareWithCommon == 'true' ? '____________________' : '',
                                                                             font: "Times New Roman",
-                                                                            size: 42
+                                                                            size: 54
                                                                         })
                                                                     ]
                                                                 })
@@ -193,7 +193,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                     children: [
                                                                         new TextRun({
                                                                             text: "___________________________________",
-                                                                            size: 42
+                                                                            size: 54
                                                                         })
                                                                     ]
                                                                 })
@@ -217,7 +217,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                         new TextRun({
                                                                             text: '(размер доли в праве)',
                                                                             font: "Times New Roman",
-                                                                            size: 32
+                                                                            size: 363
                                                                         })
                                                                     ]
                                                                 })
@@ -237,7 +237,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                         new TextRun({
                                                                             text: general_info.isShareWithCommon == 'true' ? "(доля с общим знаменателем)" : '',
                                                                             font: "Times New Roman",
-                                                                            size: 32
+                                                                            size: 36
                                                                         })
                                                                     ]
                                                                 })
@@ -256,7 +256,7 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                                                     children: [
                                                                         new TextRun({
                                                                             text: "(фамилия И.О. лица, выдавшего бюллетень)",
-                                                                            size: 32
+                                                                            size: 36
                                                                         })
                                                                     ]
                                                                 })
@@ -298,10 +298,16 @@ import { GeneralInfoType } from "../controllers/redact.controller";
                                         new Paragraph({
                                             children: [
                                                 new TextRun({
-                                                    text: `Номер вопроса повестки дня: ____`,
+                                                    text: `Номер вопроса повестки дня: `,
                                                     bold: true,
                                                     font: "Times New Roman",
                                                     size: 49
+                                                }),
+                                                new TextRun({
+                                                    text: "____",
+                                                    bold: true,
+                                                    font: "Times New Roman",
+                                                    size: 54
                                                 })
                                             ]
                                         }),

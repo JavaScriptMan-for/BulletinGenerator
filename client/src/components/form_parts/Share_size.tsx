@@ -33,6 +33,10 @@ const ShareSize: FC<Props> = ({ fraction }) => {
               value: 0,
               message: 'Слишком малое значение',
             },
+            max: {
+              value: 999999,
+              message: "Слишком большое значение"
+            }
           })}
         />
         {fraction === 'в доле' && (
@@ -48,6 +52,10 @@ const ShareSize: FC<Props> = ({ fraction }) => {
                   value: 1,
                   message: 'Слишком малый знаменатель',
                 },
+                    max: {
+              value: 999999,
+              message: "Слишком большой знаменатель"
+            }
               })}
             />
           </>
@@ -65,6 +73,10 @@ const ShareSize: FC<Props> = ({ fraction }) => {
                   value: 1,
                   message: 'Слишком малый числитель',
                 },
+                    max: {
+              value: 999999,
+              message: "Слишком большое значение"
+            }
               })}
             />
             <span>/</span>
@@ -78,6 +90,10 @@ const ShareSize: FC<Props> = ({ fraction }) => {
                   value: 1,
                   message: 'Слишком малый знаменатель',
                 },
+                    max: {
+              value: 999999,
+              message: "Слишком большое значение"
+            }
               })}
             />
           </>

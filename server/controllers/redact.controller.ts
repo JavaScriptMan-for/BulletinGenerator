@@ -80,7 +80,7 @@ class RedactController {
 
                 let share_text: string = `(размер доли в праве) ${general_info.isShareWithCommon}`
                 const name_representative_text: string =  `(представитель ${various_info[count].name_representative})`
-                let size_address: number = 52
+                let size_address: number = 50
 
 
                 if (various_info[count].fraction === 'га') {
@@ -140,7 +140,7 @@ class RedactController {
                                                         children: [
                                                             new TextRun({
                                                                 text: "БЮЛЛЕТЕНЬ ДЛЯ ГОЛОСОВАНИЯ",
-                                                                size: 52,
+                                                                size: 58,
                                                                 font: "Times New Roman",
                                                                 bold: true
                                                             })
@@ -165,7 +165,7 @@ class RedactController {
                                                             new TextRun({
                                                                 text: general_info.date,
                                                                 font: "Times New Roman",
-                                                                size: 52
+                                                                size: 58
                                                             }),
                                                         ]
                                                     })
@@ -221,7 +221,7 @@ class RedactController {
                                                             new TextRun({
                                                                 text: various_info[count].share_size,
                                                                 font: "Times New Roman",
-                                                                size: 42
+                                                                size: 54
                                                             })
                                                         ]
                                                     })
@@ -241,7 +241,7 @@ class RedactController {
                                                             new TextRun({
                                                                 text: general_info.isShareWithCommon == 'true' ? various_info[count].share_size_with_common_denominator : ``,
                                                                 font: "Times New Roman",
-                                                                size: 42
+                                                                size: 54
                                                             })
                                                         ]
                                                     })
@@ -259,8 +259,8 @@ class RedactController {
                                                         alignment: AlignmentType.RIGHT,
                                                         children: [
                                                             new TextRun({
-                                                                text: "___________________________________",
-                                                                size: 42
+                                                                text: "_______________________________",
+                                                                size: 54
                                                             })
                                                         ]
                                                     })
@@ -284,7 +284,7 @@ class RedactController {
                                                             new TextRun({
                                                                 text: share_text,
                                                                 font: "Times New Roman",
-                                                                size: 32
+                                                                size: 36
                                                             })
                                                         ]
                                                     })
@@ -304,7 +304,7 @@ class RedactController {
                                                             new TextRun({
                                                                 text: general_info.isShareWithCommon == 'true' ? "(доля с общим знаменателем)" : '',
                                                                 font: "Times New Roman",
-                                                                size: 32
+                                                                size: 36
                                                             })
                                                         ]
                                                     })
@@ -323,7 +323,7 @@ class RedactController {
                                                         children: [
                                                             new TextRun({
                                                                 text: "(фамилия И.О. лица, выдавшего бюллетень)",
-                                                                size: 32
+                                                                size: 36
                                                             })
                                                         ]
                                                     })
@@ -365,10 +365,16 @@ class RedactController {
                             new Paragraph({
                                 children: [
                                     new TextRun({
-                                        text: `Номер вопроса повестки дня: ${various_info[count].number_day}`,
+                                        text: `Номер вопроса повестки дня: `,
                                         bold: true,
                                         font: "Times New Roman",
                                         size: 49
+                                    }),
+                                    new TextRun({
+                                        text: `${various_info[count].number_day}`,
+                                        bold: true,
+                                        font: "Times New Roman",
+                                        size: 54
                                     })
                                 ]
                             }),
