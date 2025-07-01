@@ -10,6 +10,9 @@ config()
 
 const PORT = process.env.PORT || 80
 
+
+app.use(express.static(path.join(__dirname, '..', '..', 'client', 'dist')))
+
 app.use(cors({ origin: 'localhost:3000' }))
 app.use(express.json());
 
@@ -22,16 +25,11 @@ app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
 //Rotes
 app.use('/api', mainRouter);
 
-try {
-    app.use(express.static(path.join(__dirname, '..', '..', 'client', 'dist')))
-    app.use((req: Request, res: Response) => {
-        res.sendFile(path.join(__dirname, "..", '..', "client", 'dist'))
+
+
+    app.get('*', (req: Request, res: Response) => {
+        res.sendFile(path.join(__dirname, "..", '..', "client", 'dist', 'index.html'))
     })
-} catch (error) {
-    console.error(error)
-}
-
-
 
 app.listen(PORT, () => {
     console.log("Сервер запущен");

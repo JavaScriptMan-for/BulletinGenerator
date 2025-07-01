@@ -329,3 +329,47 @@
 2025/06/29 17:23:22 [notice] 12964#2240: exiting
 2025/06/29 17:23:22 [notice] 12964#3280: exit
 2025/06/29 17:23:22 [notice] 16388#16392: worker process 12964 exited with code 0
+2025/07/01 18:26:42 [notice] 8832#11972: using the "select" event method
+2025/07/01 18:26:42 [notice] 8832#11972: nginx/1.29.0
+2025/07/01 18:26:42 [info] 8832#11972: OS: 260200 build:9200, "", suite:100, type:1
+2025/07/01 18:26:42 [notice] 8832#11972: start worker processes
+2025/07/01 18:26:42 [notice] 8832#11972: start worker process 2428
+2025/07/01 18:26:42 [notice] 2428#7860: nginx/1.29.0
+2025/07/01 18:26:42 [info] 2428#7860: OS: 260200 build:9200, "", suite:100, type:1
+2025/07/01 18:26:42 [notice] 2428#7860: create thread 7788
+2025/07/01 18:26:42 [notice] 2428#7860: create thread 1856
+2025/07/01 18:26:42 [notice] 2428#7860: create thread 14364
+2025/07/01 18:27:48 [info] 2428#7788: *11 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:34:13 [info] 2428#7788: *39 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:35:36 [info] 2428#7788: *49 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:36:13 [info] 2428#7788: *36 client 127.0.0.1 closed keepalive connection
+2025/07/01 18:36:13 [info] 2428#7788: *63 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:36:13 [info] 2428#7788: *64 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:36:13 [info] 2428#7788: *65 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:36:13 [info] 2428#7788: *66 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:41:46 [info] 2428#7788: *77 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:41:46 [info] 2428#7788: *78 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:41:46 [info] 2428#7788: *79 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:41:46 [info] 2428#7788: *80 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:41:46 [info] 2428#7788: *81 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:44:15 [info] 2428#7788: *92 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:44:15 [info] 2428#7788: *93 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:44:15 [info] 2428#7788: *94 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:44:15 [info] 2428#7788: *95 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:44:15 [info] 2428#7788: *96 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:46:55 [info] 2428#7788: *99 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2025/07/01 18:51:23 [notice] 5076#18016: signal process started
+2025/07/01 18:51:23 [notice] 8832#11972: reconfiguring
+2025/07/01 18:51:23 [notice] 8832#11972: using the "select" event method
+2025/07/01 18:51:23 [notice] 8832#11972: start worker processes
+2025/07/01 18:51:23 [notice] 8832#11972: start worker process 19168
+2025/07/01 18:51:23 [notice] 19168#10212: nginx/1.29.0
+2025/07/01 18:51:23 [info] 19168#10212: OS: 260200 build:9200, "", suite:100, type:1
+2025/07/01 18:51:23 [notice] 2428#7860: gracefully shutting down
+2025/07/01 18:51:23 [notice] 2428#1856: exiting
+2025/07/01 18:51:23 [notice] 19168#10212: create thread 17992
+2025/07/01 18:51:23 [notice] 19168#10212: create thread 10596
+2025/07/01 18:51:23 [notice] 19168#10212: create thread 12760
+2025/07/01 18:51:24 [notice] 2428#7788: exiting
+2025/07/01 18:51:24 [notice] 2428#7860: exit
+2025/07/01 18:51:24 [notice] 8832#11972: worker process 2428 exited with code 0
