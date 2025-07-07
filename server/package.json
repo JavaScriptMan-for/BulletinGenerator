@@ -11,7 +11,7 @@
     "copy-static": "xcopy static dist\\static /E /I /Y",
     "build": "rmdir /S /Q dist && tsc -b && npm run copy-static",
     "copy-static-linux": "cp -r static dist/static",
-    "build-linux": "rm -rf dist && tsc -b && npm run copy-static",
+    "build-linux": "rm -rf dist && tsc -b && npm run copy-static-linux",
     "prod": "npm run build && node dist/server.js"
   },
   "keywords": [],
