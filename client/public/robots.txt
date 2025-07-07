@@ -2,6 +2,6 @@ User-agent: *
 
 Disallow: /various
 Disallow: /result
-Disallow: /not-found'
+Disallow: /not-found
 
 Sitemap: https://bullet-generator.ru/Sitemap.xml
